@@ -1,0 +1,11 @@
+.main-descr {
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 1.5;
+   color: var(--color-grey-700);
+
+
+   &--home {
+      color: var(--color-white);
+   }
+}

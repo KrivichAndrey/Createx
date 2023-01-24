@@ -1,0 +1,21 @@
+.main-title {
+   --main-title-color: var(--color-grey-900);
+   --main-title-color-home: var(--color-white);
+
+   font-size: 72px;
+   font-weight: 700;
+   line-height: 1.3;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   color: var(--main-title-color);
+
+
+   &--home {
+      color: var(--main-title-color-home);
+   }
+
+
+   &--marked {
+      color: var(--color-primary);
+   }
+}

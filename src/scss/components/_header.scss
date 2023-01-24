@@ -4,6 +4,12 @@
    padding: 22px 0;
    background-color: transparent;
 
+
+   &--home {
+      background-color: var(--color-white);
+   }
+
+
    &__container {
       max-width: 1262px;
       display: flex;
@@ -11,6 +17,7 @@
       align-items: center;
       flex-wrap: wrap;
    }
+
 
    &__menu {
       margin-left: -114px;
