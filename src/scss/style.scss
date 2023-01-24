@@ -12,11 +12,11 @@
 @import "settings/global";
 
 
-// ------------- UTILITY
-
-
 // ------------- COMPONENTS
-
+@import "./components/logo";
+@import "./components/menu";
+@import "./components/header-actions";
 
 
 // ------------- SECTIONS
+@import "./components/header";

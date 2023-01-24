@@ -1,0 +1,18 @@
+.header {
+   --menu-item-color: var(--color-grey-800);
+   --header-actions-text-color: var(--color-grey-900);
+   padding: 22px 0;
+   background-color: transparent;
+
+   &__container {
+      max-width: 1262px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+   }
+
+   &__menu {
+      margin-left: -114px;
+   }
+}
