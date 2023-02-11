@@ -1,25 +1,23 @@
 .header {
-   --menu-item-color: var(--color-grey-800);
-   --header-actions-text-color: var(--color-grey-900);
    padding: 22px 0;
    background-color: transparent;
 
-
-   &--home {
-      background-color: var(--color-white);
-   }
-
+   --menu-item-color: var(--color-grey-800);
+   --header-actions-text-color: var(--color-grey-900);
 
    &__container {
-      max-width: 1262px;
       display: flex;
-      justify-content: space-between;
-      align-items: center;
       flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 1262px;
    }
-
 
    &__menu {
       margin-left: -114px;
+   }
+
+   &--home {
+      background-color: var(--color-white);
    }
 }

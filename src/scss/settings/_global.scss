@@ -2,12 +2,10 @@ html {
    height: 100%;
 }
 
-
 body {
    height: 100%;
-   font-family: 'Ubuntu';
+   font-family: "Ubuntu", sans-serif;
 }
-
 
 .page__wrapper {
    min-height: 100%;
@@ -15,16 +13,13 @@ body {
    flex-direction: column;
 }
 
-
 .main {
    flex-grow: 1;
 }
 
-
 a {
    display: block;
 }
-
 
 .container {
    max-width: 1260px;

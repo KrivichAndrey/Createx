@@ -1,0 +1,46 @@
+.main-descr {
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 1.5;
+   color: var(--main-descr-color);
+
+   &--home {
+      color: var(--descr-light-color);
+   }
+
+   --descr-main-color: var(--color-grey-700);
+   --descr-light-color: var(--color-white);
+}
+
+.text-descr {
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 1.5;
+   color: var(--text-main-color);
+
+   &--center {
+      text-align: center;
+   }
+
+   &--light {
+      color: var(--text-light-color);
+   }
+
+   &--dusty-grey {
+      color: var(--text-dusty-grey-color);
+   }
+
+   &--dark-color {
+      color: var(--text-dark-color);
+   }
+
+   &--bright-grey {
+      color: var(--text-bright-grey-color);
+   }
+
+   --text-main-color: var(--color-grey-700);
+   --text-bright-grey-color: var(--color-grey-800);
+   --text-dark-color: var(--color-grey-900);
+   --text-dusty-grey-color: var(--color-grey-600);
+   --text-light-color: var(--color-white);
+}

@@ -1,26 +1,22 @@
 // ------------- FONTS
-@import "settings/fonts.scss";
-
+@import "./settings/fonts.scss";
 
 // ------------- RESET
-@import "settings/reset";
-
+@import "./settings/reset";
 
 // ------------- GLOBAL
-@import "settings/vars";
-@import "settings/mixins";
-@import "settings/global";
-
+@import "./settings/vars";
+@import "./settings/mixins";
+@import "./settings/global";
 
 // ------------- COMPONENTS
+@import "./components/header";
 @import "./components/logo";
 @import "./components/menu";
 @import "./components/header-actions";
-@import "./components/titles";
-@import "./components/main-descr";
-@import "./components/buttons";
-
-
-// ------------- SECTIONS
-@import "./components/header";
 @import "./components/hero-home";
+@import "./components/_headings";
+@import "./components/text-descr";
+@import "./components/buttons";
+@import "./components/about-section";
+@import "./components/video-block";

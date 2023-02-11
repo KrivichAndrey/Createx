@@ -1,17 +1,15 @@
 .logo {
+   outline-color: var(--color-grey-900);
    width: 130px;
    height: 20px;
    transition: transform 0.2s ease;
-   outline-color: var(--color-grey-900);
-
-
-   &:hover {
-      transform: scale(1.1);
-   }
-
 
    &__img {
       object-fit: cover;
       object-position: center;
+   }
+
+   &:hover {
+      transform: scale(1.1);
    }
 }
