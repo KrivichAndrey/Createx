@@ -1,9 +1,9 @@
 *,
 ::after,
 ::before {
-   box-sizing: border-box;
    margin: 0;
    padding: 0;
+   box-sizing: border-box;
 }
 
 html {
@@ -29,14 +29,14 @@ section {
 
 body {
    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
-      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-   font-size: 1rem;
+   "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
    font-weight: 400;
    -webkit-font-smoothing: antialiased;
+   font-size: 1rem;
    line-height: 1.5;
    text-align: left;
-   color: #000;
-   background-color: #fff;
+   color: #000000;
+   background-color: #ffffff;
 }
 
 [tabindex="-1"]:focus {
@@ -44,18 +44,18 @@ body {
 }
 
 hr {
-   box-sizing: content-box;
-   height: 0;
    overflow: visible;
+   height: 0;
+   box-sizing: content-box;
 }
 
 abbr[data-original-title],
 abbr[title] {
-   text-decoration: underline;
+   border-bottom: 0;
    -webkit-text-decoration: underline dotted;
+   text-decoration: underline;
    text-decoration: underline dotted;
    cursor: help;
-   border-bottom: 0;
    -webkit-text-decoration-skip-ink: none;
    text-decoration-skip-ink: none;
 }
@@ -70,8 +70,8 @@ dt {
 }
 
 dd {
-   margin-bottom: 0.5rem;
    margin-left: 0;
+   margin-bottom: 0.5rem;
 }
 
 b,
@@ -86,9 +86,9 @@ small {
 sub,
 sup {
    position: relative;
+   vertical-align: baseline;
    font-size: 75%;
    line-height: 0;
-   vertical-align: baseline;
 }
 
 sub {
@@ -101,14 +101,14 @@ sup {
 
 a {
    display: inline-block;
-   color: inherit;
    font-weight: inherit;
    text-decoration: none;
+   color: inherit;
    background-color: transparent;
 
    &:not([href]):not([tabindex]) {
-      color: inherit;
       font-weight: inherit;
+      color: inherit;
    }
 
    &:not([href]):not([tabindex]):focus,
@@ -134,9 +134,9 @@ samp {
 }
 
 pre {
+   overflow: auto;
    margin-top: 0;
    margin-bottom: 1rem;
-   overflow: auto;
 }
 
 img {
@@ -155,8 +155,8 @@ svg {
 }
 
 svg {
-   overflow: hidden;
    vertical-align: middle;
+   overflow: hidden;
 }
 
 table {
@@ -164,11 +164,11 @@ table {
 }
 
 caption {
+   caption-side: bottom;
    padding-top: 0.75rem;
    padding-bottom: 0.75rem;
-   color: #6c757d;
    text-align: left;
-   caption-side: bottom;
+   color: #6c757d;
 }
 
 th {
@@ -180,17 +180,17 @@ label {
 }
 
 button {
-   width: auto;
+   -webkit-appearance: none;
+   -webkit-appearance: none;
+   appearance: none;
    border: none;
    border-radius: 0;
-   background-color: transparent;
+   width: auto;
    box-shadow: none;
-   appearance: none;
-   -webkit-appearance: none;
    -webkit-font-smoothing: inherit;
-   -moz-osx-font-smoothing: inherit;
-   -webkit-appearance: none;
+   background-color: transparent;
    cursor: pointer;
+   -moz-osx-font-smoothing: inherit;
 }
 
 button:focus {
@@ -227,18 +227,18 @@ select {
    -moz-appearance: none;
    -webkit-appearance: none;
    appearance: none;
-   border: none;
    outline: none;
-   background-color: transparent;
+   border: none;
    font: inherit;
+   background-color: transparent;
 }
 
 [type="button"],
 [type="reset"],
 [type="submit"],
 button {
-   appearance: button;
    -webkit-appearance: button;
+   appearance: button;
 }
 
 [type="button"]:not(:disabled),
@@ -252,22 +252,22 @@ button:not(:disabled) {
 [type="reset"]::-moz-focus-inner,
 [type="submit"]::-moz-focus-inner,
 button::-moz-focus-inner {
-   padding: 0;
    border-style: none;
+   padding: 0;
 }
 
 input[type="checkbox"],
 input[type="radio"] {
-   box-sizing: border-box;
    padding: 0;
+   box-sizing: border-box;
 }
 
 input[type="date"],
 input[type="datetime-local"],
 input[type="month"],
 input[type="time"] {
-   appearance: listbox;
    -webkit-appearance: listbox;
+   appearance: listbox;
 }
 
 textarea {
@@ -276,8 +276,8 @@ textarea {
 }
 
 fieldset {
-   min-width: 0;
    border: 0;
+   min-width: 0;
 }
 
 legend {
@@ -286,8 +286,8 @@ legend {
    max-width: 100%;
    font-size: 1.5rem;
    line-height: inherit;
-   color: inherit;
    white-space: normal;
+   color: inherit;
 }
 
 progress {
@@ -300,9 +300,9 @@ progress {
 }
 
 [type="search"] {
-   outline-offset: -2px;
-   appearance: none;
    -webkit-appearance: none;
+   appearance: none;
+   outline-offset: -2px;
 }
 
 [type="search"]::-webkit-search-decoration {
@@ -310,8 +310,8 @@ progress {
 }
 
 ::-webkit-file-upload-button {
-   font: inherit;
    -webkit-appearance: button;
+   font: inherit;
 }
 
 output {
