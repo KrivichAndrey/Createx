@@ -20,8 +20,8 @@ export const scss = () => app.gulp.src(app.path.src.scss, { sourcemaps: true })
     overrideBrowderlist: ['last 3 version'],
     cascade: true,
   }))
-  // Раскоментировать, если нужен не сжатый файл стилей!
-  .pipe(app.gulp.dest(app.path.build.css))
+  // Раскоментировать строку ниже для несжатого style.css
+  // .pipe(app.gulp.dest(app.path.build.css))
   .pipe(cleanCss())
   .pipe(rename({
     extname: ".min.css"

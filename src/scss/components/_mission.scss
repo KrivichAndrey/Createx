@@ -1,0 +1,13 @@
+.mission {
+   padding-top: var(--section-offset);
+   padding-bottom: 200px;
+   background-color: var(--color-white);
+
+   &__heading {
+      margin-bottom: 24px;
+   }
+
+   &__text-descr {
+      margin-bottom: 60px;
+   }
+}

@@ -1,0 +1,61 @@
+.activity-list {
+   --grid-col-gap: 9.75vw;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(285px, auto));
+   column-gap: var(--grid-col-gap);
+   row-gap: 50px;
+   justify-content: center;
+   justify-items: center;
+
+   &__item {
+      position: relative;
+
+      &:not(:nth-child(3n)) {
+         &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: calc(var(--grid-col-gap) / 2 * (-1));
+            width: 1px;
+            height: 100%;
+            background-image: url("@img/bg/divider.svg");
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            @media (max-width: 1099px) {
+               display: none;
+            }
+         }
+      }
+   }
+
+   &__link {
+      width: 285px;
+      padding-top: 72px;
+      background-position: top center;
+      background-size: 48px 48px;
+      background-repeat: no-repeat;
+      transition: transform 0.2s ease-in-out;
+
+      &--quality {
+         background-image: url("@img/bg/ic-like.svg");
+      }
+
+      &--safety {
+         background-image: url("@img/bg/ic-hand.svg");
+      }
+
+      &--comfort {
+         background-image: url("@img/bg/ic-slippers.svg");
+      }
+
+      &:hover {
+         transform: scale(1.15);
+      }
+   }
+
+   &__card-heading {
+      margin-bottom: 8px;
+   }
+}

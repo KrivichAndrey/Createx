@@ -1,4 +1,6 @@
 .page-heading {
+   --main-title-color: var(--color-grey-900);
+   --main-title-color-home: var(--color-white);
    font-weight: 700;
    font-size: 72px;
    line-height: 1.3;
@@ -13,12 +15,15 @@
    &--marked {
       color: var(--color-primary);
    }
-
-   --main-title-color: var(--color-grey-900);
-   --main-title-color-home: var(--color-white);
 }
 
 .heading {
+   --heading-main-color: var(--color-grey-900);
+   --heading-bright-grey-color: var(--color-grey-800);
+   --heading-medium-grey-color: var(--color-grey-700);
+   --heading-dusty-grey-color: var(--color-grey-600);
+   --heading-light-color: var(--color-white);
+   --heading-burning-orange-color: var(--color-primary);
    font-weight: 700;
    font-size: 46px;
    line-height: 1.5;
@@ -50,16 +55,13 @@
 
    &--tiny {
       font-size: 16px;
-
-      &--taller {
-         line-height: 1.6;
-      }
    }
 
-   --heading-main-color: var(--color-grey-900);
-   --heading-bright-grey-color: var(--color-grey-800);
-   --heading-medium-grey-color: var(--color-grey-700);
-   --heading-dusty-grey-color: var(--color-grey-600);
-   --heading-light-color: var(--color-white);
-   --heading-burning-orange-color: var(--color-primary);
+   &--tall {
+      line-height: 1.6;
+   }
+
+   &--low-heigh {
+      line-height: 1.3;
+   }
 }

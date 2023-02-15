@@ -2,7 +2,7 @@
 @import "./settings/fonts.scss";
 
 // ------------- RESET
-@import "./settings/reset";
+@import "./settings/normalize";
 
 // ------------- GLOBAL
 @import "./settings/vars";
@@ -19,4 +19,6 @@
 @import "./components/text-descr";
 @import "./components/buttons";
 @import "./components/about-section";
-@import "./components/video-block";
+@import "components/video-block";
+@import "components/mission";
+@import "components/activity-list";

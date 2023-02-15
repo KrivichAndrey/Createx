@@ -1,9 +1,9 @@
 *,
 ::after,
 ::before {
+   box-sizing: border-box;
    margin: 0;
    padding: 0;
-   box-sizing: border-box;
 }
 
 html {
@@ -28,8 +28,8 @@ section {
 }
 
 body {
-   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
-   "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+      "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
    font-weight: 400;
    -webkit-font-smoothing: antialiased;
    font-size: 1rem;
@@ -44,9 +44,9 @@ body {
 }
 
 hr {
+   box-sizing: content-box;
    overflow: visible;
    height: 0;
-   box-sizing: content-box;
 }
 
 abbr[data-original-title],
@@ -70,8 +70,8 @@ dt {
 }
 
 dd {
-   margin-left: 0;
    margin-bottom: 0.5rem;
+   margin-left: 0;
 }
 
 b,
@@ -183,9 +183,9 @@ button {
    -webkit-appearance: none;
    -webkit-appearance: none;
    appearance: none;
+   width: auto;
    border: none;
    border-radius: 0;
-   width: auto;
    box-shadow: none;
    -webkit-font-smoothing: inherit;
    background-color: transparent;
@@ -258,8 +258,8 @@ button::-moz-focus-inner {
 
 input[type="checkbox"],
 input[type="radio"] {
-   padding: 0;
    box-sizing: border-box;
+   padding: 0;
 }
 
 input[type="date"],
@@ -276,8 +276,8 @@ textarea {
 }
 
 fieldset {
-   border: 0;
    min-width: 0;
+   border: 0;
 }
 
 legend {

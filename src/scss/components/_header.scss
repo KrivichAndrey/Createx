@@ -1,9 +1,9 @@
 .header {
-   padding: 22px 0;
-   background-color: transparent;
-
    --menu-item-color: var(--color-grey-800);
    --header-actions-text-color: var(--color-grey-900);
+
+   padding: 22px 0;
+   background-color: transparent;
 
    &__container {
       display: flex;

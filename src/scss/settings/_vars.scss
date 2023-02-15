@@ -13,4 +13,6 @@
    --color-grey-100: #f9f9f9;
 
    --section-offset: 120px;
+   --container-nominal-width: 1230px;
+   --container-max-width: calc(var(--container-nominal-width) + 15px * 2);
 }

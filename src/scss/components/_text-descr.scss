@@ -1,4 +1,6 @@
 .main-descr {
+   --descr-main-color: var(--color-grey-700);
+   --descr-light-color: var(--color-white);
    font-weight: 400;
    font-size: 20px;
    line-height: 1.5;
@@ -7,16 +9,34 @@
    &--home {
       color: var(--descr-light-color);
    }
-
-   --descr-main-color: var(--color-grey-700);
-   --descr-light-color: var(--color-white);
 }
 
 .text-descr {
+   --text-main-color: var(--color-grey-700);
+   --text-bright-grey-color: var(--color-grey-800);
+   --text-dark-color: var(--color-grey-900);
+   --text-dusty-grey-color: var(--color-grey-600);
+   --text-light-color: var(--color-white);
    font-weight: 400;
-   font-size: 18px;
+   font-size: 16px;
    line-height: 1.5;
    color: var(--text-main-color);
+
+   &--large {
+      font-size: 18px;
+   }
+
+   &--small {
+      font-size: 14px;
+   }
+
+   &--tiny {
+      font-size: 12px;
+   }
+
+   &--tall {
+      line-height: 1.6;
+   }
 
    &--center {
       text-align: center;
@@ -37,10 +57,4 @@
    &--bright-grey {
       color: var(--text-bright-grey-color);
    }
-
-   --text-main-color: var(--color-grey-700);
-   --text-bright-grey-color: var(--color-grey-800);
-   --text-dark-color: var(--color-grey-900);
-   --text-dusty-grey-color: var(--color-grey-600);
-   --text-light-color: var(--color-white);
 }
