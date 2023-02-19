@@ -1,13 +1,56 @@
 .mission {
-   padding-top: var(--section-offset);
-   padding-bottom: 200px;
-   background-color: var(--color-white);
+  padding-top: var(--section-offset);
+  padding-bottom: 200px;
+  background-color: var(--color-white);
 
-   &__heading {
-      margin-bottom: 24px;
-   }
+  &__heading {
+    margin-bottom: 24px;
+  }
 
-   &__text-descr {
-      margin-bottom: 60px;
-   }
+  &__text-descr {
+    margin-bottom: 60px;
+  }
+
+  &__activity-list {
+    margin-bottom: var(--section-offset);
+  }
+
+  &__form {
+    border-radius: 4px;
+    padding: 48px 60px;
+    box-shadow:
+      0 80px 80px -20px rgb(154 156 165 / 8%),
+      0 30px 24px -10px rgb(154 156 165 / 5%),
+      0 12px 10px -6px rgb(154 156 165 / 4%),
+      0 4px 4px -4px rgb(30 33 44 / 3%);
+    background-color: var(--color-white);
+
+    &-title {
+      margin-bottom: 32px;
+    }
+
+    &-actions {
+      display: flex;
+      column-gap: 24px;
+      align-items: flex-end;
+    }
+
+    &-field {
+      flex-basis: 260px;
+
+      &--message {
+        flex-grow: 1;
+        filter: drop-shadow(0 4px 4px rgb(0 0 0 / 25%));
+      }
+    }
+  }
+
+  &__form-btn {
+    transition: all 0.17s ease-in-out;
+
+    &:focus {
+      outline: 2px solid rgba($color: #ff5a30, $alpha: 80%);
+      outline-offset: 3px;
+    }
+  }
 }

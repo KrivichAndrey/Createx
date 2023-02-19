@@ -1,27 +1,27 @@
 .hero-home {
-   padding: 220px 0 353px;
-   background-image: url("@img/bg/hero-home-bg.jpg");
-   background-position: center;
-   background-size: cover;
-   background-repeat: no-repeat;
-   background-color: #808080;
+  padding: 220px 0 353px;
+  background-image: url("@img/bg/hero-home-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #808080;
 
-   &__content {
-      max-width: 596px;
-   }
+  &__content {
+    max-width: 596px;
+  }
 
-   &__title {
-      margin-bottom: 24px;
-   }
+  &__title {
+    margin-bottom: 24px;
+  }
 
-   &__descr {
-      margin-bottom: 61px;
-   }
+  &__descr {
+    margin-bottom: 61px;
+  }
 
-   &__buttons {
-      display: flex;
-      flex-wrap: wrap;
-      column-gap: 24px;
-      align-items: center;
-   }
+  &__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    align-items: center;
+  }
 }

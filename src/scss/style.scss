@@ -1,5 +1,5 @@
 // ------------- FONTS
-@import "./settings/fonts.scss";
+@import "./settings/fonts";
 
 // ------------- RESET
 @import "./settings/normalize";
@@ -10,15 +10,18 @@
 @import "./settings/global";
 
 // ------------- COMPONENTS
-@import "./components/header";
 @import "./components/logo";
 @import "./components/menu";
 @import "./components/header-actions";
 @import "./components/hero-home";
-@import "./components/_headings";
+@import "./components/headings";
 @import "./components/text-descr";
 @import "./components/buttons";
+@import "./components/video-block";
+@import "./components/activity-list";
+@import "./components/form-field";
+
+// ------------- SECTIONS
+@import "./components/header";
 @import "./components/about-section";
-@import "components/video-block";
-@import "components/mission";
-@import "components/activity-list";
+@import "./components/mission";

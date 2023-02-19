@@ -1,19 +1,19 @@
 .menu {
-   &__list {
-      display: flex;
-      column-gap: 40px;
-      align-items: center;
-      font-weight: 700;
-      font-size: 16px;
-      line-height: 1.6;
-   }
+  &__list {
+    display: flex;
+    column-gap: 40px;
+    align-items: center;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.6;
+  }
 
-   &__item {
-      transition: transform 0.1s ease;
-      cursor: pointer;
+  &__item {
+    transition: transform 0.1s ease;
+    cursor: pointer;
 
-      &:hover {
-         transform: scale(1.1);
-      }
-   }
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
 }

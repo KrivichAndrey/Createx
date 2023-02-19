@@ -1,67 +1,69 @@
 .page-heading {
-   --main-title-color: var(--color-grey-900);
-   --main-title-color-home: var(--color-white);
-   font-weight: 700;
-   font-size: 72px;
-   line-height: 1.3;
-   letter-spacing: 1px;
-   text-transform: uppercase;
-   color: var(--main-title-color);
+  --main-title-color: var(--color-grey-900);
+  --main-title-color-home: var(--color-white);
 
-   &--home {
-      color: var(--main-title-color-home);
-   }
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1.3;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--main-title-color);
 
-   &--marked {
-      color: var(--color-primary);
-   }
+  &--home {
+    color: var(--main-title-color-home);
+  }
+
+  &--marked {
+    color: var(--color-primary);
+  }
 }
 
 .heading {
-   --heading-main-color: var(--color-grey-900);
-   --heading-bright-grey-color: var(--color-grey-800);
-   --heading-medium-grey-color: var(--color-grey-700);
-   --heading-dusty-grey-color: var(--color-grey-600);
-   --heading-light-color: var(--color-white);
-   --heading-burning-orange-color: var(--color-primary);
-   font-weight: 700;
-   font-size: 46px;
-   line-height: 1.5;
-   color: var(--heading-main-color);
+  --heading-main-color: var(--color-grey-900);
+  --heading-bright-grey-color: var(--color-grey-800);
+  --heading-medium-grey-color: var(--color-grey-700);
+  --heading-dusty-grey-color: var(--color-grey-600);
+  --heading-light-color: var(--color-white);
+  --heading-burning-orange-color: var(--color-primary);
 
-   &--center {
-      text-align: center;
-   }
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 1.5;
+  color: var(--heading-main-color);
 
-   &--huge {
-      font-size: 32px;
-   }
+  &--center {
+    text-align: center;
+  }
 
-   &--large {
-      font-size: 28px;
-   }
+  &--huge {
+    font-size: 32px;
+  }
 
-   &--medium {
-      font-size: 24px;
-   }
+  &--large {
+    font-size: 28px;
+  }
 
-   &--regular {
-      font-size: 20px;
-   }
+  &--medium {
+    font-size: 24px;
+  }
 
-   &--small {
-      font-size: 18px;
-   }
+  &--regular {
+    font-size: 20px;
+  }
 
-   &--tiny {
-      font-size: 16px;
-   }
+  &--small {
+    font-size: 18px;
+  }
 
-   &--tall {
-      line-height: 1.6;
-   }
+  &--tiny {
+    font-size: 16px;
+  }
 
-   &--low-heigh {
-      line-height: 1.3;
-   }
+  &--tall {
+    line-height: 1.6;
+  }
+
+  &--low-heigh {
+    line-height: 1.3;
+  }
 }

@@ -1,60 +1,62 @@
 .main-descr {
-   --descr-main-color: var(--color-grey-700);
-   --descr-light-color: var(--color-white);
-   font-weight: 400;
-   font-size: 20px;
-   line-height: 1.5;
-   color: var(--main-descr-color);
+  --descr-main-color: var(--color-grey-700);
+  --descr-light-color: var(--color-white);
 
-   &--home {
-      color: var(--descr-light-color);
-   }
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  color: var(--main-descr-color);
+
+  &--home {
+    color: var(--descr-light-color);
+  }
 }
 
 .text-descr {
-   --text-main-color: var(--color-grey-700);
-   --text-bright-grey-color: var(--color-grey-800);
-   --text-dark-color: var(--color-grey-900);
-   --text-dusty-grey-color: var(--color-grey-600);
-   --text-light-color: var(--color-white);
-   font-weight: 400;
-   font-size: 16px;
-   line-height: 1.5;
-   color: var(--text-main-color);
+  --text-dusty-grey-color: var(--color-grey-600);
+  --text-main-color: var(--color-grey-700);
+  --text-bright-grey-color: var(--color-grey-800);
+  --text-dark-color: var(--color-grey-900);
+  --text-light-color: var(--color-white);
 
-   &--large {
-      font-size: 18px;
-   }
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--text-main-color);
 
-   &--small {
-      font-size: 14px;
-   }
+  &--large {
+    font-size: 18px;
+  }
 
-   &--tiny {
-      font-size: 12px;
-   }
+  &--small {
+    font-size: 14px;
+  }
 
-   &--tall {
-      line-height: 1.6;
-   }
+  &--tiny {
+    font-size: 12px;
+  }
 
-   &--center {
-      text-align: center;
-   }
+  &--tall {
+    line-height: 1.6;
+  }
 
-   &--light {
-      color: var(--text-light-color);
-   }
+  &--center {
+    text-align: center;
+  }
 
-   &--dusty-grey {
-      color: var(--text-dusty-grey-color);
-   }
+  &--light {
+    color: var(--text-light-color);
+  }
 
-   &--dark-color {
-      color: var(--text-dark-color);
-   }
+  &--dusty-grey {
+    color: var(--text-dusty-grey-color);
+  }
 
-   &--bright-grey {
-      color: var(--text-bright-grey-color);
-   }
+  &--dark-color {
+    color: var(--text-dark-color);
+  }
+
+  &--bright-grey {
+    color: var(--text-bright-grey-color);
+  }
 }

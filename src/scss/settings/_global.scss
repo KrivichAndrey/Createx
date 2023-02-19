@@ -11,6 +11,11 @@ button {
    cursor: pointer;
 }
 
+input[type="submit"],
+input[type="reset"] {
+   cursor: pointer;
+}
+
 a {
    text-decoration: none;
    color: inherit;

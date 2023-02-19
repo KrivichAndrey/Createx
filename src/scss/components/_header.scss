@@ -1,23 +1,23 @@
 .header {
-   --menu-item-color: var(--color-grey-800);
-   --header-actions-text-color: var(--color-grey-900);
+  --menu-item-color: var(--color-grey-800);
+  --header-actions-text-color: var(--color-grey-900);
 
-   padding: 22px 0;
-   background-color: transparent;
+  padding: 22px 0;
+  background-color: transparent;
 
-   &__container {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-      max-width: 1262px;
-   }
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1262px;
+  }
 
-   &__menu {
-      margin-left: -114px;
-   }
+  &__menu {
+    margin-left: -114px;
+  }
 
-   &--home {
-      background-color: var(--color-white);
-   }
+  &--home {
+    background-color: var(--color-white);
+  }
 }
