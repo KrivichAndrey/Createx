@@ -1,6 +1,5 @@
 .mission {
   padding-top: var(--section-offset);
-  padding-bottom: 200px;
   background-color: var(--color-white);
 
   &__heading {
@@ -12,10 +11,12 @@
   }
 
   &__activity-list {
-    margin-bottom: var(--section-offset);
+    margin-bottom: 27px;
   }
 
   &__form {
+    position: relative;
+    top: 93px;
     border-radius: 4px;
     padding: 48px 60px;
     box-shadow:

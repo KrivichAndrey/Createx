@@ -11,7 +11,7 @@
     {
       "files": "*.scss",
       "options": {
-        "printWidth": 120,
+        "printWidth": 100,
         "tabWidth": 2
       }
     },
