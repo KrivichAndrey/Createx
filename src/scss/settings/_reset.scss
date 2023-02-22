@@ -225,15 +225,11 @@ select {
 }
 
 select {
-  word-wrap: normal;
-}
-
-select {
-  appearance: none;
   appearance: none;
   outline: none;
   border: none;
   font: inherit;
+  word-wrap: normal;
   background-color: transparent;
 }
 
@@ -320,7 +316,7 @@ output {
 }
 
 summary {
-  display: list-item;
+  display: block;
   cursor: pointer;
 }
 
@@ -340,10 +336,6 @@ h4,
 h5,
 h6 {
   overflow-wrap: break-word;
-}
-
-summary {
-  display: block;
 }
 
 summary::-webkit-details-marker {

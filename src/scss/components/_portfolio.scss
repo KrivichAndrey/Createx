@@ -1,0 +1,31 @@
+.portfolio {
+  padding: var(--section-offset) 0;
+  background-color: var(--color-white);
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 30px;
+    row-gap: 60px;
+  }
+
+  &__heading {
+    grid-column: 7 span;
+  }
+
+  &__slider {
+    position: relative;
+    grid-column: 12 span;
+  }
+
+  &__more-info {
+    grid-column: 12 span;
+    padding-top: 18px;
+  }
+
+  &__slider-nav {
+    position: absolute;
+    top: -98px;
+    right: -12px;
+  }
+}
