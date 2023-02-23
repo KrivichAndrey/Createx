@@ -1,0 +1,63 @@
+.testimonials {
+  padding: 112px 0 120px;
+  background-color: var(--color-grey-200);
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 30px;
+    justify-items: end;
+  }
+
+  &__content {
+    grid-column: 6 span;
+  }
+
+  &__heading {
+    margin-bottom: 55px;
+  }
+
+  &__slider {
+    position: relative;
+  }
+
+  &__slider-nav {
+    position: absolute;
+    right: -12px;
+    bottom: -11px;
+  }
+
+  &__logo {
+    grid-column: 6 span;
+  }
+}
+
+.feedback-block {
+  &__profile-photo {
+    width: 72px;
+    height: 72px;
+    margin-bottom: 22px;
+  }
+
+  &__text {
+    margin-bottom: 25px;
+  }
+}
+
+.profile-photo {
+  overflow: hidden;
+  border-radius: 100%;
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4px;
+  padding-right: 140px;
+}
