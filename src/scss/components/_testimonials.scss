@@ -1,5 +1,5 @@
 .testimonials {
-  padding: 112px 0 120px;
+  padding: 112px 0 0;
   background-color: var(--color-grey-200);
 
   &__container {
@@ -29,6 +29,11 @@
 
   &__logo {
     grid-column: 6 span;
+    margin-bottom: -60px;
+
+    img {
+      margin-top: 4px;
+    }
   }
 }
 

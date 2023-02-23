@@ -1,0 +1,53 @@
+.facts {
+  padding: 183px 0 60px;
+  background-color: var(--color-white);
+
+  &__heading {
+    margin-bottom: 58px;
+  }
+}
+
+.progress-list {
+  display: flex;
+  column-gap: 48px;
+  justify-content: center;
+  line-height: 150%;
+  text-align: center;
+  color: var(--color-grey-900);
+
+  &__value {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 148px;
+    height: 148px;
+    margin-bottom: 21px;
+    font-weight: 700;
+    font-size: 32px;
+    background-position: center;
+    background-size: 148px 148px;
+    background-repeat: no-repeat;
+
+    &--clients {
+      background-image: url("@img/bg/circle-progress-clients.svg");
+    }
+
+    &--experience {
+      background-image: url("@img/bg/circle-progress-experience.svg");
+    }
+
+    &--hours {
+      background-image: url("@img/bg/circle-progress-hours.svg");
+    }
+
+    &--projects {
+      background-image: url("@img/bg/circle-progress-projects.svg");
+    }
+  }
+
+  &__caption {
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+  }
+}
