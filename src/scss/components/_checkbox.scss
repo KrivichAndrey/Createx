@@ -1,0 +1,77 @@
+.check {
+  position: relative;
+  display: flex;
+  column-gap: 12px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  transition: all 0.2s linear;
+  cursor: pointer;
+
+  &__mark {
+    display: flex;
+    flex: 0 0 auto;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #b3b7bc;
+    border-radius: 3px;
+    background-color: var(--color-white);
+    transition: all 0.2s linear;
+  }
+
+  &__mark-icon {
+    width: 10px;
+    height: 8px;
+    fill: var(--color-white);
+    opacity: 0;
+    transition: all 0.2s linear;
+  }
+
+  input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+
+  input:focus:not(:focus-visible) + .check__mark {
+    outline: none;
+    border: 1px solid #b3b7bc;
+  }
+
+  input:focus + .check__mark {
+    outline: 3px solid rgba($color: #ff5930, $alpha: 70%);
+    border-color: rgba($color: #ff5930, $alpha: 70%);
+  }
+
+  input:checked + .check__mark {
+    outline: none;
+    border: 1px solid var(--color-primary);
+    background-color: var(--color-primary);
+
+    .check__mark-icon {
+      opacity: 1;
+    }
+  }
+
+  input:checked:focus:not(:focus-visible) + .check__mark {
+    outline: none;
+  }
+
+  input:checked:focus + .check__mark {
+    outline: 3px solid rgba($color: #ff5930, $alpha: 70%);
+    outline-offset: 2px;
+    border: 1px solid var(--color-primary);
+    background-color: var(--color-primary);
+  }
+
+  &:hover {
+    .check__mark {
+      background-color: var(--color-grey-300);
+    }
+  }
+}

@@ -1,0 +1,55 @@
+.application {
+  position: relative;
+  padding: 80px 0;
+  background-image: url("@img/bg/application-sec-bg.jpg");
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: var(--color-white);
+
+  &__heading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.application-form {
+  display: flex;
+  flex-direction: column;
+  width: 495px;
+  border: 1px solid var(--color-grey-300);
+  border-radius: 4px;
+  padding: 48px 40px;
+  box-shadow:
+    0 60px 80px -20px rgb(30 33 44 / 16%),
+    0 26px 24px -10px rgb(30 33 44 / 10%),
+    0 12px 10px -6px rgb(30 33 44 / 8%),
+    0 4px 4px -4px rgb(30 33 44 / 5%);
+  background-color: var(--color-white);
+
+  &__heading {
+    margin-bottom: 25px;
+  }
+
+  &__form-field {
+    margin-bottom: 19px;
+  }
+
+  &__check {
+    padding-top: 1px;
+  }
+
+  &__btn {
+    align-self: center;
+    margin-top: 21px;
+  }
+}

@@ -23,6 +23,7 @@
   color: var(--color-grey-800);
   background-color: var(--color-grey-200);
   transition: all 0.17s ease-in-out;
+  resize: none;
 
   &::placeholder {
     font-weight: 400;
@@ -52,7 +53,6 @@
     font-size: 12px;
   }
 
-  // TODO: text color, bg-color + focus behavior
   &--light {
     border: 1px solid rgba($color: #fff, $alpha: 20%);
     background: rgba($color: #fff, $alpha: 12%);
