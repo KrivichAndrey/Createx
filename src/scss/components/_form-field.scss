@@ -55,13 +55,26 @@
 
   &--light {
     border: 1px solid rgba($color: #fff, $alpha: 20%);
+    color: rgba($color: #fff, $alpha: 60%);
     background: rgba($color: #fff, $alpha: 12%);
+    transition: all 0.02s linear;
 
     &::placeholder {
       font-weight: 400;
       font-size: inherit;
       line-height: inherit;
       color: rgba($color: #fff, $alpha: 60%);
+    }
+
+    &:focus {
+      outline: 1px solid rgba($color: #1e212c, $alpha: 100%);
+      box-shadow: none;
+      color: var(--color-white);
+      background-color: rgba($color: #fff, $alpha: 25%);
+
+      &::placeholder {
+        color: var(--color-white);
+      }
     }
   }
 }
