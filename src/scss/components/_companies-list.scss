@@ -10,6 +10,16 @@
     height: 64px;
     transition: transform 0.15s linear;
 
+    &:focus {
+      outline: none;
+    }
+
+    &:focus-visible {
+      outline: 3px solid rgba($color: #1e212c, $alpha: 85%);
+      outline-offset: 8px;
+      border-radius: 1px;
+    }
+
     &:hover {
       transform: scale(1.4);
     }

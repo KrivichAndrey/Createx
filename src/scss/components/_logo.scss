@@ -2,14 +2,25 @@
   width: 130px;
   height: 20px;
   outline-color: var(--color-grey-900);
-  transition: transform 0.2s ease;
+  transition: transform 0.23s ease;
 
   &__img {
     object-fit: cover;
     object-position: center;
   }
 
+  &:focus {
+    outline: none;
+    border: none;
+  }
+
+  &:focus-visible {
+    outline: 3px solid rgba($color: #1e212c, $alpha: 80%);
+    outline-offset: 0.1875em;
+    border-radius: 1px;
+  }
+
   &:hover {
-    transform: scale(1.1);
+    transform: scale(1.15);
   }
 }

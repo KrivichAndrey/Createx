@@ -40,6 +40,16 @@
   &__heading {
     margin-bottom: var(--title-offset);
     transition: color 0.15s linear;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:focus-visible {
+      outline: 3px solid rgba($color: #1e212c, $alpha: 90%);
+      outline-offset: 1px;
+      border-radius: 1px;
+    }
   }
 
   &__meta-info {
@@ -52,12 +62,6 @@
   }
 
   a {
-    &:focus {
-      outline: rgba($color: #361209, $alpha: 70%) solid 3px;
-      outline-offset: 0.2em;
-      border-radius: 0.1em;
-    }
-
     &:hover {
       color: var(--color-primary);
     }
@@ -98,6 +102,16 @@
         background-color: currentcolor;
         transform: translateY(-50%);
       }
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &:focus-visible {
+      outline: 3px solid rgba($color: #1e212c, $alpha: 90%);
+      outline-offset: 1px;
+      border-radius: 1px;
     }
 
     &--with-icon {

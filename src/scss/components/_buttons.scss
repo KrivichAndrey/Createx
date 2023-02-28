@@ -39,6 +39,17 @@
     border-style: solid;
     border-width: 1px;
     background-color: transparent;
+    transition: outline 0.1s linear;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:focus-visible {
+      outline: 4px solid rgba($color: #1e212c, $alpha: 95%);
+      outline-offset: 0;
+      border-radius: 0;
+    }
 
     &--primary {
       border-color: var(--color-primary);
@@ -58,6 +69,7 @@
     &--white {
       border-color: var(--color-white);
       color: var(--color-white);
+      transition: outline 0.1s linear;
 
       &:hover {
         border-color: var(--btn-outline-hover-bg-primary);
@@ -77,6 +89,17 @@
     &--primary {
       color: var(--color-white);
       background-color: var(--color-primary);
+      transition: outline 0.1s linear;
+
+      &:focus {
+        outline: none;
+      }
+
+      &:focus-visible {
+        outline: 4px solid rgba($color: #1e212c, $alpha: 90%);
+        outline-offset: 1px;
+        border-radius: 0;
+      }
 
       &:hover {
         background-color: var(--btn-solid-primary-bg-hover);

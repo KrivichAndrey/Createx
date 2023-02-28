@@ -39,6 +39,15 @@
     background-repeat: no-repeat;
     transition: transform 0.2s ease-in-out;
 
+    &:focus {
+      outline: none;
+    }
+
+    &:focus-visible {
+      outline: 4px solid rgba($color: #1e212c, $alpha: 85%);
+      outline-offset: 1.2em;
+    }
+
     &:hover {
       transform: scale(1.15);
     }

@@ -26,7 +26,7 @@
       "files": "*.html",
       "options": {
         "printWidth": 135,
-        "tabWidth": 3
+        "tabWidth": 2
       }
     }
   ]

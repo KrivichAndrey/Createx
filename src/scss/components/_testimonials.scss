@@ -50,13 +50,33 @@
 }
 
 .profile-photo {
-  overflow: hidden;
+  position: relative;
   border-radius: 100%;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
 
   &__img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    &::before {
+      outline: 3px solid rgba($color: #1e212c, $alpha: 85%);
+      outline-offset: 1px;
+    }
   }
 }
 

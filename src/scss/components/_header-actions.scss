@@ -9,6 +9,17 @@
     column-gap: 12px;
     align-items: center;
 
+    &:focus {
+      outline: none;
+      border: none;
+    }
+
+    &:focus-visible {
+      outline: 3px solid rgba($color: #1e212c, $alpha: 80%);
+      outline-offset: 2px;
+      border-radius: 1px;
+    }
+
     &:hover {
       font-weight: inherit;
       transform: scale(1.05);
