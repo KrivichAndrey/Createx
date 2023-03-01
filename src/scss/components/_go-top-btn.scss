@@ -1,0 +1,48 @@
+.go-top-btn {
+  position: absolute;
+  right: 15px;
+  bottom: 2px;
+  display: flex;
+  column-gap: 16px;
+  align-items: flex-end;
+
+  &__caption {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: var(--color-white);
+  }
+
+  &__arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: var(--color-primary);
+  }
+
+  &__arrow-icon {
+    width: 24px;
+    height: 24px;
+    fill: var(--color-white);
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: 2px solid rgba($color: #fff, $alpha: 75%);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+
+  &:hover {
+    .go-top-btn__arrow {
+      background-color: var(--color-primary-in-state);
+    }
+  }
+}
