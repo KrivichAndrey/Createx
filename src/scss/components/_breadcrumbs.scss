@@ -1,0 +1,41 @@
+.breadcrumbs {
+  --col-gap: 22px;
+
+  display: flex;
+  column-gap: var(--col-gap);
+  align-items: center;
+
+  &__item {
+    position: relative;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--color-grey-800);
+
+    &:not(:first-child) {
+      &::before {
+        content: "/";
+        position: absolute;
+        top: 0;
+        left: calc((-1) * var(--col-gap) / 2);
+        color: currentolor;
+      }
+    }
+
+    &--active {
+      color: var(--color-grey-600);
+    }
+  }
+
+  &__link {
+    &:focus {
+      outline: none;
+    }
+
+    &:focus-visible {
+      outline: 3px solid rgba($color: #1e212c, $alpha: 90%);
+      outline-offset: 1px;
+      border-radius: 1px;
+    }
+  }
+}
