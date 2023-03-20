@@ -41,7 +41,7 @@
 
   &__copyrating {
     grid-column: 10 span;
-    padding-top: 11px;
+    padding-top: 10px;
     color: var(--color-white);
   }
 }
@@ -100,9 +100,8 @@
 
     &:focus {
       outline: 2px solid var(--color-white);
-      outline-offset: 3px;
+      outline-offset: 1px;
       border-radius: 1px;
-      transform: scale(1.15);
 
       .social__icon {
         fill: var(--color-white);
@@ -148,8 +147,8 @@
     align-items: stretch;
     width: 100%;
     margin-bottom: 16px;
-    border: none;
     padding: 0;
+    border: none;
 
     &-title {
       position: absolute;
@@ -177,16 +176,16 @@
 
   &__input {
     flex-grow: 1;
+    padding: 10px 16px;
     border-right-width: 0;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
-    padding: 10px 16px;
   }
 
   &__btn {
+    padding: 0 25px;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
-    padding: 0 25px;
     font-size: 14px;
     line-height: 44px;
 
@@ -203,7 +202,7 @@
 
 .footer-contacts {
   &__heading {
-    margin-bottom: 16px;
+    margin-bottom: 15px;
     letter-spacing: 1px;
     text-transform: uppercase;
     color: var(--color-white);
@@ -222,7 +221,7 @@
   &__item {
     display: flex;
     column-gap: 4px;
-    transition: outline 0.1s linear;
+    transition: outline 0.1s linear, color 0.18s ease-in-out;
 
     &:focus {
       outline: none;
@@ -232,6 +231,10 @@
       outline: 2px solid rgba($color: #fff, $alpha: 85%);
       outline-offset: 3px;
       border-radius: 1px;
+    }
+
+    &:hover {
+      color: var(--color-primary);
     }
 
     &--title {
@@ -245,7 +248,7 @@
   column-gap: 124px;
 
   &__heading {
-    margin-bottom: 16px;
+    margin-bottom: 14px;
     letter-spacing: 1px;
     text-transform: uppercase;
     color: var(--color-white);
@@ -260,6 +263,7 @@
 
   &__list-link {
     color: rgba($color: #fff, $alpha: 60%);
+    transition: color 0.15s ease-in-out, outline 0.05s linear;
 
     &:focus {
       outline: none;
@@ -270,6 +274,10 @@
       outline-offset: 2px;
       border-radius: 1px;
     }
+
+    &:hover {
+      color: var(--color-primary);
+    }
   }
 }
 
@@ -278,6 +286,8 @@
   column-gap: 4px;
 
   &__item {
+    transition: color 0.15s ease-in-out, outline 0.05s linear;
+
     &--with-icon {
       padding-left: 20px;
       background-image: url("@img/bg/heart.svg");
@@ -293,6 +303,10 @@
         outline: 2px solid rgba($color: #fff, $alpha: 90%);
         outline-offset: 2px;
         border-radius: 1px;
+      }
+
+      &:hover {
+        color: var(--color-primary);
       }
     }
   }

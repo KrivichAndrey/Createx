@@ -92,7 +92,7 @@
     &--primary {
       color: var(--color-white);
       background-color: var(--color-primary);
-      transition: outline 0.1s linear;
+      transition: outline 0.1s linear, background-color 0.19s ease-in-out;
 
       &:focus {
         outline: none;

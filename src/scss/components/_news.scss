@@ -1,12 +1,121 @@
 .news {
-  padding: 117px 0 119px;
-  background-color: var(--color-grey-100);
+  padding-top: 113px;
+  padding-bottom: 120px;
+  background-color: var(--color-grey-200);
 
   &__heading {
-    margin-bottom: 58px;
+    margin-bottom: 56px;
   }
 
   &__more-info {
-    margin-top: 80px;
+    margin-top: 79px;
+  }
+}
+
+.news-list {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 30px;
+
+  &__item {
+    grid-column: 6 span;
+
+    &--large {
+      grid-column: 7 span;
+      grid-row: 2 span;
+    }
+
+    &--small {
+      grid-column: 5 span;
+    }
+  }
+}
+
+.news-article {
+  --logo-height: 306px;
+  --content-pt: 24px;
+  --content-pr: 24px;
+  --content-pb: 21px;
+  --content-pl: 24px;
+  --title-offet-down: 12px;
+  --text-descr-display: block;
+
+  max-width: 705px;
+  border-radius: 4px;
+  box-shadow:
+    0 80px 80px -20px rgb(154 156 165 / 8%),
+    0 30px 24px -10px rgb(154 156 165 / 5%),
+    0 12px 10px -6px rgb(154 156 165 / 4%),
+    0 4px 4px -4px rgb(30 33 44 / 3%);
+  background-color: var(--color-white);
+
+  &__logo {
+    overflow: hidden;
+    width: 100%;
+    height: var(--logo-height);
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+  }
+
+  &__logo-img {
+    width: 100%;
+    height: var(--logo-height);
+    object-fit: cover;
+    object-position: top;
+  }
+
+  &__content {
+    padding:
+      var(--content-pt)
+      var(--content-pr)
+      var(--content-pb)
+      var(--content-pl);
+  }
+
+  &__heading {
+    margin-bottom: var(--title-offet-down);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: var(--color-grey-900);
+    transition: color 0.2s ease-in-out;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:focus-visible {
+      outline: 2px solid rgba($color: #1e212c, $alpha: 85%);
+      outline-offset: 1px;
+      border-radius: 1px;
+    }
+
+    &:hover {
+      color: var(--color-primary);
+    }
+  }
+
+  &__text-descr {
+    display: var(--text-descr-display);
+    margin-top: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: var(--color-grey-800);
+  }
+
+  &--small {
+    --logo-height: 156px;
+    --content-pt: 16px;
+    --content-pr: 24px;
+    --content-pb: 24px;
+    --content-pl: 24px;
+    --title-offet-down: 8px;
+    --text-descr-display: none;
+  }
+
+  &--large {
+    --logo-height: 360px;
+    --content-pb: 25px;
   }
 }

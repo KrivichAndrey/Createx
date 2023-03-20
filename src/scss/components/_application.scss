@@ -1,6 +1,6 @@
 .application {
   position: relative;
-  padding: 80px 0;
+  padding: 79px 0;
   background-image: url("@img/bg/application-sec-bg.jpg");
   background-position: 50% 50%;
   background-size: cover;
@@ -26,9 +26,9 @@
   display: flex;
   flex-direction: column;
   width: 495px;
+  padding: 48px 40px;
   border: 1px solid var(--color-grey-300);
   border-radius: 4px;
-  padding: 48px 40px;
   box-shadow:
     0 60px 80px -20px rgb(30 33 44 / 16%),
     0 26px 24px -10px rgb(30 33 44 / 10%),
@@ -37,7 +37,7 @@
   background-color: var(--color-white);
 
   &__heading {
-    margin-bottom: 25px;
+    margin-bottom: 23px;
   }
 
   &__form-field {
@@ -50,6 +50,6 @@
 
   &__btn {
     align-self: center;
-    margin-top: 21px;
+    margin-top: 23px;
   }
 }
