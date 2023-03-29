@@ -1,0 +1,56 @@
+// ------------------ FONTS
+@import "settings/fonts";
+
+// ------------------ RESET
+@import "settings/normalize";
+
+// ------------------ GLOBAL
+@import "settings/global";
+@import "settings/vars";
+
+// ------------------ COMPONENTS
+@import "components/logo";
+@import "components/menu";
+@import "components/headerActions";
+@import "components/headings";
+@import "components/textDescr";
+@import "components/btns";
+@import "components/videoBlock";
+@import "components/activityList";
+@import "components/formField";
+@import "components/servicesList";
+@import "components/moreInfo";
+@import "components/sliderControls";
+@import "components/projectCard";
+@import "components/projectSlider";
+@import "components/metaInfo";
+@import "components/footer/footerAbout";
+@import "components/footer/footerForm";
+@import "components/footer/menuSecondary";
+@import "components/social";
+@import "components/contactsBlock";
+@import "components/checkbox";
+@import "components/upBtn";
+@import "components/breadcrumbs";
+
+/* ------------------ SECTIONS */
+@import "components/header";
+@import "components/hero";
+@import "components/aboutSection";
+@import "components/mission";
+@import "components/servicesSection";
+@import "components/portfolio";
+@import "components/partners";
+@import "components/testimonial";
+@import "components/facts";
+@import "components/news";
+@import "components/application";
+@import "components/footer/footer";
+@import "components/sectionServicesList";
+@import "components/weOffer";
+@import "components/steps";
+@import "components/pricing";
+@import "components/works";
+@import "components/projectGallery";
+@import "components/projectGoals";
+@import "components/decisions";

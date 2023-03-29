@@ -1,0 +1,44 @@
+.upBtn {
+  display: flex;
+  column-gap: 16px;
+  align-items: flex-end;
+  width: 129px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+  transition: outline 0.05s ease;
+
+  &__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: var(--color-white);
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: var(--color-primary);
+  }
+
+  &__arrow {
+    width: 24px;
+    height: 24px;
+    fill: var(--color-white);
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: 2px solid rgb(255 255 255 / 85%);
+    outline-offset: 1px;
+    border-radius: 1px;
+  }
+}

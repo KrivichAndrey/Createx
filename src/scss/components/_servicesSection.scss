@@ -1,0 +1,19 @@
+.services {
+  padding: 208px 0 78px;
+  background-image: url("../img/serv-sec-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &__heading {
+    margin-bottom: 19px;
+  }
+
+  &__textDescr {
+    margin-bottom: 60px;
+  }
+
+  &__moreInfo {
+    margin: 80px auto 0;
+  }
+}

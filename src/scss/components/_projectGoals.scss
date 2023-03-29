@@ -1,0 +1,52 @@
+.projectGoal {
+  padding: 0 0 120px;
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 30px;
+    align-items: center;
+  }
+
+  &__about {
+    grid-column: 6 span;
+  }
+
+  &__heading {
+    margin-bottom: 40px;
+  }
+
+  &__detailsList {
+    display: flex;
+    grid-column: 6 span;
+    flex-direction: column;
+    row-gap: 16px;
+    align-items: flex-start;
+    justify-self: end;
+    width: 495px;
+    border-radius: 4px;
+    padding: 40px 40px 40px 60px;
+    box-shadow: var(--main-shadow);
+    font-size: 16px;
+    line-height: 163%;
+
+    div {
+      display: flex;
+      align-items: flex-start;
+    }
+
+    dt {
+      flex-shrink: 0;
+      width: 98px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: var(--color-grey-900);
+    }
+
+    dd {
+      padding-left: 32px;
+      font-weight: 400;
+      color: var(--color-grey-700);
+    }
+  }
+}

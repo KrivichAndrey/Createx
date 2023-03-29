@@ -1,0 +1,14 @@
+.projectSlider {
+  position: relative;
+
+  &__line {
+    display: flex;
+    column-gap: 30px;
+  }
+
+  &__sliderControls {
+    position: absolute;
+    top: -96px;
+    right: -12px;
+  }
+}

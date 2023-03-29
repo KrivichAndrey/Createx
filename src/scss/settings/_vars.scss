@@ -1,8 +1,9 @@
 :root {
+  // Color
   --color-white: #fff;
   --color-primary: #ff5a30;
   --color-primary-in-state: #fc3300;
-  --color-grey-900: #1e212c;
+  --color_grey_900: #1e212c;
   --color-grey-800: #424551;
   --color-grey-700: #787a80;
   --color-grey-600: #9a9ca5;
@@ -12,8 +13,16 @@
   --color-grey-200: #f4f5f7;
   --color-grey-100: #f9f9f9;
   --color-mercury-grey: #e8e8ec;
+
+  // Sizes
   --section-offset: 120px;
   --container-nominal-width: 1230px;
   --container-max-width: calc(var(--container-nominal-width) + 15px * 2);
-  --grid-gap: 30px;
+
+  // appearence
+  --main-shadow:
+    0 80px 80px -20px rgb(154 156 165 / 8%),
+    0 30px 24px -10px rgb(154 156 165 / 5%),
+    0 12px 10px -6px rgb(154 156 165 / 4%),
+    0 4px 4px -4px rgb(30 33 44 / 3%);
 }

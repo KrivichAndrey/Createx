@@ -1,0 +1,51 @@
+.metaInfo {
+  --col-gap: 24px;
+
+  display: flex;
+  column-gap: var(--col-gap);
+  align-items: center;
+
+  &__item {
+    position: relative;
+    transition:
+      color 0.18s ease,
+      outline 0.05s linear;
+
+    &:not(time):hover {
+      color: var(--color-primary);
+    }
+
+    &:not(:last-child)::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: calc((-1) * var(--col-gap) / 2);
+      width: 1px;
+      height: 12px;
+      background-color: currentcolor;
+      transform: translateY(-50%);
+    }
+
+    &_withIcon {
+      display: flex;
+      column-gap: 8px;
+      align-items: center;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--color_grey_900);
+      border-radius: 1px;
+    }
+  }
+
+  &__chatIcon {
+    width: 16px;
+    height: 16px;
+    fill: currentcolor;
+    object-fit: cover;
+  }
+}

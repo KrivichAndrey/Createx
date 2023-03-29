@@ -1,53 +1,48 @@
 .facts {
-  padding: 182px 0 60px;
-  background-color: var(--color-white);
+  padding: 181px 0 60px;
 
   &__heading {
-    margin-bottom: 58px;
+    margin-bottom: 60px;
   }
 }
 
-.progress-list {
+.progressList {
   display: flex;
   column-gap: 48px;
   justify-content: center;
-  line-height: 150%;
-  text-align: center;
-  color: var(--color-grey-900);
+}
+
+.progressBlock {
+  display: flex;
+  flex: 0 0 148px;
+  flex-direction: column;
+  row-gap: 21px;
 
   &__value {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 148px;
-    height: 148px;
-    margin-bottom: 21px;
+    padding: 50px 0;
     font-weight: 700;
     font-size: 32px;
-    background-position: center;
-    background-size: 148px 148px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--color_grey_900);
+    background-position: center center;
+    background-size: cover;
     background-repeat: no-repeat;
 
-    &--clients {
-      background-image: url("@img/bg/circle-progress-clients.svg");
+    &_clients {
+      background-image: url("../img/circle1.png");
     }
 
-    &--experience {
-      background-image: url("@img/bg/circle-progress-experience.svg");
+    &_experience {
+      background-image: url("../img/circle2.png");
     }
 
-    &--hours {
-      background-image: url("@img/bg/circle-progress-hours.svg");
+    &_hours {
+      background-image: url("../img/circle3.png");
     }
 
-    &--projects {
-      background-image: url("@img/bg/circle-progress-projects.svg");
+    &_projects {
+      background-image: url("../img/circle4.png");
     }
-  }
-
-  &__caption {
-    font-weight: 400;
-    font-size: 14px;
-    text-align: center;
   }
 }

@@ -1,0 +1,74 @@
+.formField {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  cursor: pointer;
+}
+
+.formField__caption {
+  margin-bottom: 5px;
+}
+
+.formField__input {
+  width: 100%;
+}
+
+.input {
+  border: 1px solid var(--color-grey-400);
+  border-radius: 4px;
+  padding: 11px 16px 12px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: var(--color-grey-800);
+  background-color: var(--color-grey-200);
+  transition: all 0.17s ease-in-out;
+  resize: none;
+
+  &::placeholder {
+    font-weight: 400;
+    font-size: inherit;
+    line-height: inherit;
+    color: var(--color-grey-600);
+  }
+
+  &_large {
+    padding: 13px 16px;
+    font-size: 16px;
+    line-height: 160%;
+  }
+
+  &_small {
+    padding: 9px 12px;
+    font-size: 12px;
+  }
+
+  &_light {
+    border: 1px solid rgb(255 255 255 / 20%);
+    background: rgb(255 255 255 / 12%);
+
+    &::placeholder {
+      font-weight: 400;
+      font-size: inherit;
+      line-height: inherit;
+      color: rgb(255 255 255 / 60%);
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: none;
+      color: var(--color-white);
+      background-color: rgb(255 255 255 / 45%);
+    }
+  }
+
+  &:focus {
+    outline: 1px solid rgb(255 90 48 / 40%);
+    box-shadow:
+      0 80px 80px -20px rgb(255 90 48 / 8%),
+      0 30px 24px -10px rgb(255 90 48 / 5%),
+      0 12px 10px -6px rgb(255 90 48 / 4%),
+      0 4px 4px -4px rgb(30 33 44 / 3%);
+    background-color: var(--color-white);
+  }
+}

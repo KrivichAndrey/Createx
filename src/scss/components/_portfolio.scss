@@ -1,31 +1,27 @@
 .portfolio {
-  padding: var(--section-offset) 0;
+  padding: 121px 0;
   background-color: var(--color-white);
 
   &__container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    column-gap: 30px;
-    row-gap: 60px;
   }
 
   &__heading {
     grid-column: 7 span;
+    margin-bottom: 59px;
   }
 
-  &__slider {
-    position: relative;
+  &__projectSlider {
     grid-column: 12 span;
   }
 
-  &__more-info {
+  &__moreInfo {
     grid-column: 12 span;
-    padding-top: 20px;
+    margin-top: 80px;
   }
 
-  &__slider-nav {
-    position: absolute;
-    top: -98px;
-    right: -12px;
+  &_currentService {
+    padding: 181px 0 100px;
   }
 }

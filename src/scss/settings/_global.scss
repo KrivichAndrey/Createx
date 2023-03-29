@@ -12,8 +12,13 @@ button {
 }
 
 input[type="submit"],
-input[type="reset"] {
+input[type="reset"],
+input[type="button"] {
   cursor: pointer;
+}
+
+address {
+  font-style: normal;
 }
 
 a {
@@ -70,7 +75,6 @@ body {
 }
 
 .page__wrapper {
-  position: relative;
   display: flex;
   flex-direction: column;
   min-height: 100%;
@@ -86,7 +90,7 @@ body {
   padding: 0 15px;
 }
 
-.hidden {
+.visuallyHidden {
   position: absolute;
   top: 0;
   left: 0;

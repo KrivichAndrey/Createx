@@ -1,0 +1,23 @@
+.contactsBlock {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+
+  &__link {
+    transition: outline 0.05s ease, color 0.18s ease-in-out;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:focus-visible {
+      outline: 2px solid rgb(255 255 255 / 85%);
+      outline-offset: 1px;
+      border-radius: 1px;
+    }
+
+    &:hover {
+      color: var(--color-primary);
+    }
+  }
+}

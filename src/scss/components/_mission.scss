@@ -1,4 +1,6 @@
 .mission {
+  --activityListOffset: 27px;
+
   padding-top: var(--section-offset);
   background-color: var(--color-white);
 
@@ -6,47 +8,55 @@
     margin-bottom: 24px;
   }
 
-  &__text-descr {
+  &__textDescr {
     margin-bottom: 60px;
   }
 
-  &__activity-list {
-    margin-bottom: 25px;
+  &__activityList {
+    margin-bottom: var(--activityListOffset);
   }
 
   &__form {
     position: relative;
-    top: 95px;
+    top: 93px;
     border-radius: 4px;
     padding: 48px 60px;
-    box-shadow:
-      0 80px 80px -20px rgb(154 156 165 / 8%),
-      0 30px 24px -10px rgb(154 156 165 / 5%),
-      0 12px 10px -6px rgb(154 156 165 / 4%),
-      0 4px 4px -4px rgb(30 33 44 / 3%);
+    box-shadow: var(--main-shadow);
     background-color: var(--color-white);
+  }
 
-    &-title {
-      margin-bottom: 32px;
-    }
+  &__formTitle {
+    margin-bottom: 32px;
+  }
 
-    &-actions {
-      display: flex;
-      column-gap: 24px;
-      align-items: flex-end;
-    }
+  &__formActions {
+    display: flex;
+    column-gap: 24px;
+    align-items: flex-end;
+  }
 
-    &-field {
-      flex-basis: 260px;
+  &__formField {
+    flex-basis: 260px;
 
-      &--message {
-        flex-grow: 1;
-        filter: drop-shadow(0 4px 4px rgb(0 0 0 / 25%));
-      }
+    &_message {
+      flex-grow: 1;
+      filter: drop-shadow(0 4px 4px rgb(0 0 0 / 25%));
     }
   }
 
-  &__form-btn {
-    transition: all 0.17s ease-in-out outline 0.1s linear;
+  &__btn {
+    position: relative;
+    top: 26px;
+    z-index: 1;
+    display: block;
+    margin: 0 auto;
+    padding: 0 112px;
+  }
+
+  &_page_currentService {
+    --activityListOffset: 74px;
+
+    padding-top: 81px;
+    background-color: var(--color_grey_900);
   }
 }

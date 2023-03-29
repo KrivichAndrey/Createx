@@ -1,6 +1,6 @@
 .header {
   --menu-item-color: var(--color-grey-800);
-  --header-actions-text-color: var(--color-grey-900);
+  --header-actions-text-color: var(--color_grey_900);
 
   padding: 22px 0;
   background-color: transparent;
@@ -17,11 +17,11 @@
     margin-left: -114px;
   }
 
-  &--home {
+  &_home {
     background-color: var(--color-white);
   }
 
-  &--secondary {
+  &_secondary {
     position: absolute;
     top: 0;
     left: 0;

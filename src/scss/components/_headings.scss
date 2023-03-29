@@ -1,69 +1,77 @@
-.page-heading {
-  --main-title-color: var(--color-grey-900);
-  --main-title-color-home: var(--color-white);
+.pageHeading {
+  --color: var(--color_grey_900);
 
   font-weight: 700;
   font-size: 72px;
   line-height: 1.3;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: var(--main-title-color);
+  color: var(--color);
 
-  &--home {
-    color: var(--main-title-color-home);
+  &_home {
+    --color: var(--color-white);
   }
 
-  &--marked {
-    color: var(--color-primary);
+  &_marked {
+    --color: var(--color-primary);
   }
 }
 
 .heading {
-  --heading-main-color: var(--color-grey-900);
-  --heading-bright-grey-color: var(--color-grey-800);
-  --heading-medium-grey-color: var(--color-grey-700);
-  --heading-dusty-grey-color: var(--color-grey-600);
-  --heading-light-color: var(--color-white);
-  --heading-burning-orange-color: var(--color-primary);
+  --size: 46px;
+  --line-height: 150%;
+  --color: var(--color_grey_900);
 
   font-weight: 700;
-  font-size: 46px;
-  line-height: 1.5;
-  color: var(--heading-main-color);
+  font-size: var(--size);
+  line-height: var(--line-height);
+  color: var(--color);
 
-  &--fz32 {
-    font-size: 32px;
-  }
-
-  &--fz28 {
-    font-size: 28px;
-  }
-
-  &--fz24 {
-    font-size: 24px;
-  }
-
-  &--fz20 {
-    font-size: 20px;
-  }
-
-  &--fz18 {
-    font-size: 18px;
-  }
-
-  &--fz16 {
-    font-size: 16px;
-  }
-
-  &--tall {
-    line-height: 1.6;
-  }
-
-  &--low-heigh {
-    line-height: 1.3;
-  }
-
-  &--center {
+  &_center {
     text-align: center;
+  }
+
+  &_fz32 {
+    --size: 32px;
+  }
+
+  &_fz28 {
+    --size: 28px;
+  }
+
+  &_fz24 {
+    --size: 24px;
+  }
+
+  &_fz20 {
+    --size: 20px;
+  }
+
+  &_fz18 {
+    --size: 18px;
+  }
+
+  &_fz16 {
+    --size: 16px;
+  }
+
+  &_tall {
+    --line-height: 160%;
+  }
+
+  &_lowHeight {
+    --line-height: 130%;
+  }
+
+  &_light {
+    --color: var(--color-white);
+  }
+
+  &_light_transparent {
+    color: rgba(255 255 255 / 60%);
+  }
+
+  &_grey600 {
+    color: var(--color-grey-600);
   }
 }

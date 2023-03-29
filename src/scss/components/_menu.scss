@@ -9,24 +9,11 @@
   }
 
   &__item {
-    transition: transform 0.15s ease;
+    transition: transform 0.1s ease;
     cursor: pointer;
 
     &:hover {
-      transform: scale(1.15);
-    }
-  }
-
-  &__link {
-    &:focus {
-      outline: none;
-      border: none;
-    }
-
-    &:focus-visible {
-      outline: 3px solid rgba($color: #1e212c, $alpha: 80%);
-      outline-offset: 1px;
-      border-radius: 1px;
+      transform: scale(1.1);
     }
   }
 }

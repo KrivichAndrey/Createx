@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, user-scalable=yes, initial-scale=1.0" name="viewport" />
+    <meta content="ie=edge" http-equiv="X-UA-Compatible" />
+    <link href="css/main.min.css" rel="stylesheet" />
+    <title>Createx Construction</title>
+  </head>
+
+  <body class="page">
+    <div class="page__wrapper">
+      <header class="header header_home" id="header">
+        <div class="container header__container">
+          <a class="logo" href="index.html">
+            <svg class="logo__icon">
+              <use href="img/svg/sprite.svg#ic-logo"></use>
+            </svg>
+          </a>
+          <nav class="menu header__menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link" href="#">About&nbsp;Us</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="services.html">Services</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Work</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">News</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__actions headerActions">
+            <a class="headerActions__item header-actions__item--phone" href="tel:4055550128">
+              <img class="headerActions__icon" src="./img/phone.svg" alt="mobile phone" />
+              <span class="headerActions__text headerActions__text_title">Call&nbsp;us</span>
+              <span class="headerActions__text">(405) 555-0128</span>
+            </a>
+            <a class="headerActions__item header-actions__item--email" href="mailto:hello@createx.com">
+              <img class="headerActions__icon" src="./img/chat.svg" alt="Chat" />
+              <span class="headerActions__text headerActions__text_title">Talk to&nbsp;us</span>
+              <span class="headerActions__text">hello@createx.com</span>
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <main class="main">
+        <section class="hero">
+          <div class="container">
+            <div class="hero__content">
+              <h1 class="pageHeading pageHeading_home hero__title">
+                Create<span class="pageHeading pageHeading_marked">x</span> Construction
+              </h1>
+              <p class="mainDescr mainDescr_home hero__descr">
+                Cras ultrices leo vitae non viverra. Fringilla nisi quisque consequat, dignissim vitae proin ipsum sed.
+                Pellentesque nec turpis purus eget pellentesque integer ipsum elementum felis.
+              </p>
+              <div class="hero__buttons">
+                <button class="btn btn_large btn_outline btn_outline_white">Learn more about&nbsp;us</button>
+                <button class="btn btn_large btn_solid btn_solid_primary">Submit request</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="aboutSection">
+          <div class="container">
+            <h2 class="heading heading_center aboutSection__heading">We&nbsp;are Createx Construction Bureau</h2>
+            <p class="textDescr textDescr_fz18 textDescr_center aboutSection__textDescr">
+              We&nbsp;are rightfully considered to&nbsp;be&nbsp;the best construction company in&nbsp;the USA.
+            </p>
+            <div class="videoBlock aboutSection__videoBlock">
+              <button class="videoBlock__btn videoBlock__btn_play" aria-label="play video">
+                <svg class="videoBlock__btnIcon videoBlock__btnIcon_play">
+                  <use href="./img/svg/sprite.svg#ic-play-video"></use>
+                </svg>
+              </button>
+              <button class="videoBlock__btn videoBlock__btn_mute" aria-label="mute video">
+                <svg class="videoBlock__btnIcon videoBlock__btnIcon_mute">
+                  <use href="./img/svg/sprite.svg#ic-mute-video"></use>
+                </svg>
+              </button>
+              <video class="videoBlock__content" aria-label="video-content" muted preload="metadata">
+                <source src="./resources/construction-equipment.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </section>
+
+        <section class="mission">
+          <div class="container">
+            <h2 class="heading heading_lowHeight heading_center mission__heading">Our core values</h2>
+            <p class="textDescr textDescr_fz18 textDescr_center mission__textDescr">
+              Our mission is&nbsp;to&nbsp;set the highest standards for construction sphere.
+            </p>
+            <ul class="activityList mission__activityList">
+              <li class="activityList__item">
+                <a class="activityList__link activityList__link_quality" href="#">
+                  <h3 class="heading heading_fz20 heading_center activityList__cardHeading">Quality</h3>
+                  <p class="textDescr textDescr_center textDescr_tall">
+                    Culpa nostrud commodo ea&nbsp;consequat aliquip reprehenderit. Veniam velit nostrud aliquip sunt.
+                  </p>
+                </a>
+              </li>
+              <li class="activityList__item">
+                <a class="activityList__link activityList__link_safety" href="#">
+                  <h3 class="heading heading_fz20 heading_center activityList__cardHeading">Safety</h3>
+                  <p class="textDescr textDescr_center textDescr_tall">
+                    Anim reprehenderit sint voluptate exercitation adipisicing laborum adipisicing. Minim empor est&nbsp;ea.
+                  </p>
+                </a>
+              </li>
+              <li class="activityList__item">
+                <a class="activityList__link activityList__link_comfort" href="#">
+                  <h3 class="heading heading_fz20 heading_center activityList__cardHeading">Comfort</h3>
+                  <p class="textDescr textDescr_center textDescr_tall">
+                    Sit veniam aute dolore adipisicing nulla sit culpa. Minim mollit voluptate ullamco proident ea&nbsp;ad.
+                  </p>
+                </a>
+              </li>
+            </ul>
+            <form class="mission__form" name="mission__call-back-form" action="#">
+              <h2 class="heading heading_center heading_fz28 mission__formTitle">
+                Want to&nbsp;know more? Ask&nbsp;us a&nbsp;question:
+              </h2>
+              <fieldset class="mission__formActions">
+                <label
+                  class="formField mission__formField textDescr textDescr_grey_800 textDescr_tall textDescr_fz14"
+                  for="userName">
+                  <span class="formField__caption">Name</span>
+                  <input
+                    class="formField__input input"
+                    id="userName"
+                    name="userName"
+                    placeholder="Your name"
+                    type="text"
+                    required />
+                </label>
+                <label
+                  class="formField mission__formField textDescr textDescr_grey_800 textDescr_tall textDescr_fz14"
+                  for="userPhone">
+                  <span class="formField__caption">Phone</span>
+                  <input
+                    class="formField__input input"
+                    id="userPhone"
+                    name="userPhone"
+                    placeholder="Your phone"
+                    type="tel"
+                    required />
+                </label>
+                <label
+                  class="formField mission__formField mission__formField_message textDescr textDescr_grey_800 textDescr_tall textDescr_fz14"
+                  for="userMessage">
+                  <span class="formField__caption">Message</span>
+                  <input
+                    class="formField__input input"
+                    id="userMessage"
+                    name="userMessage"
+                    placeholder="Your message"
+                    type="text"
+                    required />
+                </label>
+                <input class="mission__formBtn btn btn_regular btn_solid btn_solid_primary" type="submit" value="Send" />
+              </fieldset>
+            </form>
+          </div>
+        </section>
+
+        <section class="services">
+          <div class="container">
+            <h2 class="services__heading heading heading_center">Our services</h2>
+            <p class="services__textDescr textDescr textDescr_center textDescr_fz18">
+              Createx Construction Bureau is&nbsp;a&nbsp;construction giant with a&nbsp;full range of&nbsp;construction
+              services.
+            </p>
+            <ul class="servicesList">
+              <li class="servicesList__item">
+                <a class="servicesList__card servicesCard" href="currentService.html">
+                  <div class="servicesCard__bg">
+                    <img src="./img/services-card-bg.jpg" alt="Construction" />
+                  </div>
+                  <svg class="servicesCard__icon">
+                    <use href="./img/svg/sprite.svg#ic-constr"></use>
+                  </svg>
+                  <h3 class="servicesCard__heading heading heading_fz20 heading_center">Construction</h3>
+                </a>
+              </li>
+              <li class="servicesList__item">
+                <a class="servicesList__card servicesCard" href="currentService.html">
+                  <div class="servicesCard__bg">
+                    <img src="./img/serv-card-bg-project.jpg" alt="Project Development" />
+                  </div>
+                  <svg class="servicesCard__icon">
+                    <use href="./img/svg/sprite.svg#ic-project"></use>
+                  </svg>
+                  <h3 class="servicesCard__heading heading heading_fz20 heading_center">Project Development</h3>
+                </a>
+              </li>
+              <li class="servicesList__item">
+                <a class="servicesList__card servicesCard" href="currentService.html">
+                  <div class="servicesCard__bg">
+                    <img src="./img/services-card-bg.jpg" alt="Interior Design" />
+                  </div>
+                  <svg class="servicesCard__icon">
+                    <use href="./img/svg/sprite.svg#ic-design"></use>
+                  </svg>
+                  <h3 class="servicesCard__heading heading heading_fz20 heading_center">Interior Design</h3>
+                </a>
+              </li>
+              <li class="servicesList__item">
+                <a class="servicesList__card servicesCard" href="currentService.html">
+                  <div class="servicesCard__bg">
+                    <img src="./img/serv-card-bg-repairs.jpg" alt="Repairs" />
+                  </div>
+                  <svg class="servicesCard__icon">
+                    <use href="./img/svg/sprite.svg#ic-repairs"></use>
+                  </svg>
+                  <h3 class="servicesCard__heading heading heading_fz20 heading_center">Repairs</h3>
+                </a>
+              </li>
+            </ul>
+            <div class="moreInfo services__moreInfo">
+              <h3 class="heading heading_fz28">Learn more about our services</h3>
+              <a class="btn btn_large btn_solid btn_solid_primary" href="services.html">Veiw services</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="portfolio">
+          <div class="portfolio__container container">
+            <h2 class="portfolio__heading heading heading_lowHeight">
+              Browse our selected projects and learn more about our work
+            </h2>
+            <div class="projectSlider portfolio__projectSlider">
+              <nav class="projectSlider__sliderControls sliderControls">
+                <button class="sliderControl">
+                  <svg class="sliderControl__icon">
+                    <use href="./img/svg/sprite.svg#ic-arrow-left"></use>
+                  </svg>
+                </button>
+                <button class="sliderControl">
+                  <svg class="sliderControl__icon">
+                    <use href="./img/svg/sprite.svg#ic-arrow-right"></use>
+                  </svg>
+                </button>
+              </nav>
+              <div class="projectSlider__viewpoert">
+                <div class="projectSlider__line">
+                  <div class="projectSlider__slide">
+                    <div class="projectCard">
+                      <div class="projectCard__logo">
+                        <img class="projectCard__logoImg" src="./img/redFingerBuilding.jpg" alt="red finger buiding" />
+                      </div>
+                      <div class="projectCard__content">
+                        <h3 class="projectCard__heading heading heading_center heading_fz20">Red Finger Building</h3>
+                        <p class="projectCard__subTitle textDescr textDescr_center textDescr_fz14">Business Centers</p>
+                        <a class="projectCard__btn btn btn_regular btn_outline btn_outline_primary" href="project.html">
+                          View project
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="projectSlider__slide">
+                    <div class="projectCard">
+                      <div class="projectCard__logo">
+                        <img class="projectCard__logoImg" src="./img/cubesBuilding.jpg" alt="Cubes Building" />
+                      </div>
+                      <div class="projectCard__content">
+                        <h3 class="projectCard__heading heading heading_center heading_fz20">Cubes Building</h3>
+                        <p class="projectCard__subTitle textDescr textDescr_center textDescr_fz14">Business Centers</p>
+                        <a class="projectCard__btn btn btn_regular btn_outline btn_outline_primary" href="project.html">
+                          View project
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="projectSlider__slide">
+                    <div class="projectCard">
+                      <div class="projectCard__logo">
+                        <img class="projectCard__logoImg" src="./img/thePencilBuilding.jpg" alt="The Pencil Building" />
+                      </div>
+                      <div class="projectCard__content">
+                        <h3 class="projectCard__heading heading heading_center heading_fz20">The Pencil Building</h3>
+                        <p class="projectCard__subTitle textDescr textDescr_center textDescr_fz14">
+                          Stores &amp;&nbsp;Malls
+                        </p>
+                        <a class="projectCard__btn btn btn_regular btn_outline btn_outline_primary" href="project.html">
+                          View project
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="moreInfo portfolio__moreInfo">
+              <h3 class="heading heading_fz28">Explore all our works</h3>
+              <a class="btn btn_large btn_solid btn_solid_primary" href="portfolio.html">View portfolio</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="partners">
+          <div class="container">
+            <h2 class="partners__heading heading heading_center heading_lowHeight">Supported by&nbsp;12+&nbsp;partners</h2>
+            <ul class="companyList partners__companyList">
+              <li class="companyList__item">
+                <img class="companyList__logo" src="./img/inDepth.png" alt="In Depth" />
+              </li>
+              <li class="companyList__item">
+                <img class="companyList__logo" src="./img/higherFit.png" alt="Higher Fit" />
+              </li>
+              <li class="companyList__item">
+                <img class="companyList__logo" src="./img/sentialConsulting.png" alt="Sential Consulting" />
+              </li>
+              <li class="companyList__item">
+                <img class="companyList__logo" src="./img/happyHome.png" alt="Happy Home" />
+              </li>
+              <li class="companyList__item">
+                <img class="companyList__logo" src="./img/forSale.png" alt="For Sale" />
+              </li>
+              <li class="companyList__item">
+                <img class="companyList__logo" src="./img/sunsetRealty.png" alt="Sunset Realty" />
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="testimonial">
+          <div class="container testimonial__container">
+            <div class="testimonial__content">
+              <h2 class="testimonial__heading heading heading_lowHeight">What our clients are saying</h2>
+              <div class="feedBackSlider testimonial__feedBackSlider">
+                <nav class="sliderControls feedBackSlider__sliderControls">
+                  <button class="sliderControl">
+                    <svg class="sliderControl__icon">
+                      <use href="./img/svg/sprite.svg#ic-arrow-left"></use>
+                    </svg>
+                  </button>
+                  <button class="sliderControl">
+                    <svg class="sliderControl__icon">
+                      <use href="./img/svg/sprite.svg#ic-arrow-right"></use>
+                    </svg>
+                  </button>
+                </nav>
+                <div class="feedBackSlider__viewport">
+                  <div class="feedBackSlider__line">
+                    <div class="feedBackSlider__slide">
+                      <div class="feedBackContent">
+                        <a class="feedBackContent__profileLogo" href="#">
+                          <img class="feedBackContent__logoImg" src="./img/profileImage.png" alt="User photo" />
+                        </a>
+                        <p class="textDescr textDescr_grey_800 textDescr_tall">
+                          Ipsum aute sunt aliquip aute et&nbsp;occaecat. Anim minim do&nbsp;cillum eiusmod enim. Consectetur
+                          magna cillum consequat minim laboris cillum laboris voluptate minim proident exercitation ullamco.
+                        </p>
+                        <div class="feedBackContent__profileInfo">
+                          <a class="feedBackContent__userNameLink textDescr textDescr_tall textDescr_grey_900" href="#">
+                            Shawn Edwards
+                          </a>
+                          <p class="textDescr textDescr_fz14">Position, Company name</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial__banner">
+              <img class="testimonial__bannerImg" src="./img/testimonialBanner.jpg" alt="shaking hands" />
+            </div>
+          </div>
+        </section>
+
+        <section class="facts">
+          <div class="container">
+            <h2 class="facts__heading heading heading_lowHeight heading_center">Some facts and figures</h2>
+            <ul class="progressList">
+              <li class="progressList__item progressBlock">
+                <div class="progressBlock__value progressBlock__value_clients">98%</div>
+                <p class="progressBlock__caption textDescr textDescr_fz14 textDescr_grey_900 textDescr_center">
+                  Totally satisfied clients
+                </p>
+              </li>
+              <li class="progressList__item progressBlock">
+                <div class="progressBlock__value progressBlock__value_experience">20</div>
+                <p class="progressBlock__caption textDescr textDescr_fz14 textDescr_grey_900 textDescr_center">
+                  Years of experience
+                </p>
+              </li>
+              <li class="progressList__item progressBlock">
+                <div class="progressBlock__value progressBlock__value_hours">9452</div>
+                <p class="progressBlock__caption textDescr textDescr_fz14 textDescr_grey_900 textDescr_center">
+                  Working hours spent
+                </p>
+              </li>
+              <li class="progressList__item progressBlock">
+                <div class="progressBlock__value progressBlock__value_projects">100%</div>
+                <p class="progressBlock__caption textDescr textDescr_fz14 textDescr_grey_900 textDescr_center">
+                  Succeeded projects
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="news">
+          <div class="container">
+            <h2 class="news__heading heading heading_center heading_lowHeight">Recent news</h2>
+            <ul class="newsList">
+              <li class="newsList__item newsList__item_large">
+                <article class="newsList__article newsArticle newsArticle_large">
+                  <div class="newsArticle__logo">
+                    <img class="newsArticle__logoImg" src="./img/build.jpg" alt="man with a perforator" />
+                  </div>
+                  <div class="newsArticle__content">
+                    <a class="newsArticle__heading heading heading_fz20" href="#">
+                      How to Build Climate Change-Resilient Infrastructure
+                    </a>
+                    <div class="metaInfo textDescr textDescr_fz14">
+                      <a class="metaInfo__item" href="#">Industry News</a>
+                      <time class="metaInfo__item" datetime="2020-06-24">June 24, 2020</time>
+                      <a class="metaInfo__item metaInfo__item_withIcon" href="#">
+                        <svg class="metaInfo__chatIcon">
+                          <use href="img/svg/sprite.svg#ic-chat"></use>
+                        </svg>
+                        4 comments
+                      </a>
+                    </div>
+                    <p class="newsArticle_descr textDescr textDescr_tall textDescr_grey_800">
+                      Ipsum aliquet nisi, hendrerit rhoncus quam tortor, maecenas faucibus. Tincidunt aliquet sit vel,
+                      venenatis nulla. Integer bibendum turpis convallis enim, nibh convallis...
+                    </p>
+                  </div>
+                </article>
+              </li>
+              <li class="newsList__item newsList__item_small">
+                <article class="newsList__article newsArticle newsArticle_small">
+                  <div class="newsArticle__logo">
+                    <img class="newsArticle__logoImg" src="./img/contruction.jpg" alt="cap" />
+                  </div>
+                  <div class="newsArticle__content">
+                    <a class="newsArticle__heading heading heading_fz20" href="#">How Construction Can Help Itself</a>
+                    <div class="metaInfo textDescr textDescr_fz14">
+                      <a class="metaInfo__item" href="#">Innovation</a>
+                      <time class="metaInfo__item" datetime="2020-06-12">June 12, 2020</time>
+                      <a class="metaInfo__item metaInfo__item_withIcon" href="#">
+                        <svg class="metaInfo__chatIcon">
+                          <use href="img/svg/sprite.svg#ic-chat"></use>
+                        </svg>
+                        No comments
+                      </a>
+                    </div>
+                    <p class="newsArticle_descr textDescr textDescr_tall textDescr_grey_800">
+                      Porta habitant vitae quam interdum. Leo viverra non volutpat rhoncus placerat vitae scelerisque.
+                      Rhoncus augue faucibus maecenas lacus...
+                    </p>
+                  </div>
+                </article>
+              </li>
+              <li class="newsList__item newsList__item_small">
+                <article class="newsList__article newsArticle newsArticle_small">
+                  <div class="newsArticle__logo">
+                    <img class="newsArticle__logoImg" src="./img/floor.jpg" alt="flooring" />
+                  </div>
+                  <div class="newsArticle__content">
+                    <a class="newsArticle__heading heading heading_fz20" href="#">Types of Flooring Materials</a>
+                    <div class="metaInfo textDescr textDescr_fz14">
+                      <a class="metaInfo__item" href="#">Company News</a>
+                      <time class="metaInfo__item" datetime="2019-12-1">December 1, 2019</time>
+                      <a class="metaInfo__item metaInfo__item_withIcon" href="#">
+                        <svg class="metaInfo__chatIcon">
+                          <use href="img/svg/sprite.svg#ic-chat"></use>
+                        </svg>
+                        No comments
+                      </a>
+                    </div>
+                    <p class="newsArticle_descr textDescr textDescr_tall textDescr_grey_800">
+                      Maecenas donec lacinia nunc, quam sit magnis mauris. Neque bibendum et mauris, aenean. Vel arcu amet in
+                      sem parturient integer duis et nulla...
+                    </p>
+                  </div>
+                </article>
+              </li>
+            </ul>
+            <div class="news__moreInfo moreInfo">
+              <h3 class="moreInfo__heading heading heading_fz28">Explore all our news posts</h3>
+              <a class="btn btn_solid btn_solid_primary btn_large" href="#">View all news</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="application">
+          <h2 class="visuallyHidden">A quick way to discuss details</h2>
+          <div class="container application__container">
+            <form class="applicationForm" action="#">
+              <h3 class="applicationForm__heading heading heading_fz28 heading_center">A quick way to discuss details</h3>
+              <label
+                class="applicationForm__formField formField textDescr textDescr_fz14 textDescr_grey_800 textDescr_tall"
+                for="applicationFormUserName">
+                <span class="formField__caption">Name*</span>
+                <input
+                  class="formField__input input"
+                  id="applicationFormUserName"
+                  name="applicationFormUserName"
+                  placeholder="Your name"
+                  type="text"
+                  required />
+              </label>
+              <label
+                class="applicationForm__formField formField textDescr textDescr_fz14 textDescr_grey_800 textDescr_tall"
+                for="applicationFormUserPhone">
+                <span class="formField__caption">Phone*</span>
+                <input
+                  class="formField__input input"
+                  id="applicationFormUserPhone"
+                  name="applicationFormUserPhone"
+                  placeholder="Your phone number"
+                  type="text"
+                  required />
+              </label>
+              <label
+                class="applicationForm__formField formField textDescr textDescr_fz14 textDescr_grey_800 textDescr_tall"
+                for="applicationFormUserEmail">
+                <span class="formField__caption">Email</span>
+                <input
+                  class="formField__input input"
+                  id="applicationFormUserEmail"
+                  name="applicationFormUserEmail"
+                  placeholder="Your working email"
+                  type="text"
+                  required />
+              </label>
+              <label
+                class="applicationForm__formField formField textDescr textDescr_fz14 textDescr_grey_800 textDescr_tall"
+                for="applicationFormUserEmail">
+                <span class="formField__caption">Message*</span>
+                <textarea
+                  class="formField__input input"
+                  id="applicationFormUserMessage"
+                  name="applicationFormUserMessage"
+                  placeholder="Your message">
+                </textarea>
+              </label>
+              <label class="applicationForm__checkbox checkbox" for="applicationFormCheckbox">
+                <input
+                  class="applicationFormCheckboxBasic"
+                  id="applicationFormCheckbox"
+                  name="applicationFormCheckbox"
+                  type="checkbox" />
+                <span class="checkbox__icon">
+                  <svg class="checkbox__mark">
+                    <use href="img/svg/sprite.svg#ic-checkbox"></use>
+                  </svg>
+                </span>
+                <span class="checkbox__text textDescr textDescr_fz14 textDescr_grey_800">
+                  I agree to receive communications from Createx Construction Bureau.
+                </span>
+              </label>
+              <input
+                class="applicationForm__btn btn btn_regular btn_solid btn_solid_primary"
+                type="submit"
+                value="Send request" />
+            </form>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <h2 class="visuallyHidden">Createx Construction</h2>
+
+        <div class="container footer__container">
+          <div class="footerAbout footer__about">
+            <a class="logo logo_light" href="index.html">
+              <svg class="logo__icon">
+                <use href="./img/svg/sprite.svg#ic-logo"></use>
+              </svg>
+            </a>
+            <ul class="social">
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <svg class="social__icon">
+                    <use href="./img/svg/sprite.svg#ic-whatsapp"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <svg class="social__icon">
+                    <use href="./img/svg/sprite.svg#ic-mess"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <svg class="social__icon">
+                    <use href="./img/svg/sprite.svg#ic-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <svg class="social__icon">
+                    <use href="./img/svg/sprite.svg#ic-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <svg class="social__icon">
+                    <use href="./img/svg/sprite.svg#ic-youtube"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <p class="footerAbout__text textDescr textDescr_fz14 textDescr_light_transparent">
+              Createx Construction Bureau has been successfully operating in the USA construction market since 2000. We are
+              proud to offer you quality construction and exemplary service. Our mission is to set the highest standards for
+              construction sphere.
+            </p>
+          </div>
+          <form class="footer__form footerForm" action="#">
+            <h3 class="footerForm__heading heading heading_fz24 heading_light">Let’s stay in touch</h3>
+            <fieldset class="footerForm__group">
+              <input
+                class="footerForm__input input input_light"
+                id="footerFormInput"
+                name="footerFormInput"
+                type="text"
+                placeholder="Your email address" />
+              <input class="footerForm__btn btn btn_small btn_solid btn_solid_primary" type="button" value="Subscribe" />
+            </fieldset>
+            <p class="footerForm__descr textDescr textDescr_fz12 textDescr_light_transparent">
+              *Subscribe to our newsletter to receive communications and early updates from Createx Construction Bureau.
+            </p>
+          </form>
+          <div class="footer__address">
+            <h3 class="footer__addressTitle heading heading_fz16 heading_light">Head office</h3>
+            <address class="footer__contactsBlock contactsBlock">
+              <a class="contactsBlock__link textDescr textDescr_tall textDescr_light_transparent" href="#">
+                <span class="contactsBlock__link textDescr textDescr_tall textDescr_light">Address:</span>
+                8502 Preston Rd. Inglewood, New York
+              </a>
+              <a class="contactsBlock__link textDescr textDescr_tall textDescr_light_transparent" href="tel:4055550128">
+                <span class="contactsBlock__link textDescr textDescr_tall textDescr_light">Call:</span>
+                (405) 555-0128
+              </a>
+              <a
+                class="contactsBlock__link textDescr textDescr_tall textDescr_light_transparent"
+                href="mailto:hello@createx.com">
+                <span class="contactsBlock__link textDescr textDescr_tall textDescr_light">Email:</span>
+                hello@createx.com
+              </a>
+            </address>
+          </div>
+          <nav class="footer__menuSecondary menuSecondary">
+            <div class="menuSecondary__column">
+              <h3 class="menuSecondary__heading heading heading_fz16 heading_light">Who we are</h3>
+              <ul class="menuSecondary__list">
+                <li class="menuSecondary__listItem">
+                  <a class="menuSecondary__link textDescr textDescr_tall textDescr_light_transparent" href="#">About Us</a>
+                </li>
+                <li class="menuSecondary__listItem">
+                  <a class="menuSecondary__link textDescr textDescr_tall textDescr_light_transparent" href="#">
+                    Available Positions
+                  </a>
+                </li>
+                <li class="menuSecondary__listItem">
+                  <a class="menuSecondary__link textDescr textDescr_tall textDescr_light_transparent" href="#">Contacts</a>
+                </li>
+              </ul>
+            </div>
+            <div class="menuSecondary__column">
+              <h3 class="menuSecondary__heading heading heading_fz16 heading_light">Our experience</h3>
+              <ul class="menuSecondary__list">
+                <li class="menuSecondary__listItem">
+                  <a class="menuSecondary__link textDescr textDescr_tall textDescr_light_transparent" href="services.html">
+                    Services
+                  </a>
+                </li>
+                <li class="menuSecondary__listItem">
+                  <a class="menuSecondary__link textDescr textDescr_tall textDescr_light_transparent" href="portfolio.html">
+                    Work
+                  </a>
+                </li>
+                <li class="menuSecondary__listItem">
+                  <a class="menuSecondary__link textDescr textDescr_tall textDescr_light_transparent" href="#">News</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <small class="footer__copyright textDescr textDescr_fz12 textDescr_light">
+            © All rights reserved. Made with
+            <a class="footer__copyright footer__copyright_withIcon" href="index.html">by Createx Studio</a>
+          </small>
+          <a class="upBtn footer__upBtn" href="#header">
+            <span class="upBtn__text">Go to top</span>
+            <span class="upBtn__icon">
+              <svg class="upBtn__arrow">
+                <use href="./img/svg/sprite.svg#ic-arrow-top"></use>
+              </svg>
+            </span>
+          </a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,137 @@
+.pricing {
+  position: relative;
+  padding-top: 80px;
+  padding-bottom: 41px;
+  background-color: var(--color-grey-200);
+
+  &__decor {
+    position: absolute;
+    top: 0;
+    left: -8px;
+    z-index: 1;
+  }
+
+  &__heading {
+    margin-bottom: 25px;
+  }
+
+  &__subHeading {
+    margin-bottom: 60px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+  }
+
+  &__tableWrapper {
+    position: relative;
+    z-index: 2;
+    border: 1px solid var(--color-grey-300);
+    border-radius: 4px;
+    box-shadow: var(--main-shadow);
+    background: var(--color-white);
+  }
+
+  &__table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+}
+
+.priceTable {
+  &__header {
+    font-weight: 700;
+    line-height: 150%;
+
+    .priceTable__row {
+      .priceTable__col:not(:first-child) {
+        width: 19.91%;
+        padding: 37px 0 24px;
+
+        .priceTable__title {
+          margin-bottom: 8px;
+        }
+      }
+
+      .priceTable__col:first-child {
+        vertical-align: bottom;
+        padding-bottom: 25px;
+        padding-left: 23px;
+        text-align: left;
+
+        .priceTable__title {
+          font-size: 18px;
+          text-transform: initial;
+        }
+      }
+    }
+  }
+
+  &__title {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: var(--color_grey_900);
+  }
+
+  &__subTitle {
+    font-size: 18px;
+    line-height: 150%;
+    color: var(--color-grey-700);
+  }
+
+  &__checked {
+    position: relative;
+    font-size: 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 24px;
+      height: 24px;
+      background-image: url("../img/tableMark.svg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: var(--color-grey-800);
+  }
+
+  &__footer {
+    background-color: var(--color-white);
+
+    .priceTable__row .priceTable__col {
+      padding: 30px 0;
+      text-align: center;
+    }
+  }
+
+  &__body {
+    .priceTable__row {
+      .priceTable__col:first-child {
+        padding-left: 23px;
+      }
+
+      .priceTable__col {
+        padding-top: 16.5px;
+        padding-bottom: 16px;
+
+        &:not(:first-child) .priceTable__text {
+          text-align: center;
+        }
+      }
+
+      &:nth-child(2n-1) {
+        background-color: var(--color-grey-200);
+      }
+    }
+  }
+}

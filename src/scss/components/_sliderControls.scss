@@ -1,0 +1,66 @@
+.sliderControls {
+  display: flex;
+  align-items: center;
+}
+
+.sliderControl {
+  --btn-bg-color: var(--color-primary);
+  --btn-bg-opacity: 0;
+  --arrow-color: var(--color-grey-800);
+
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  color: var(--color-grey-800);
+  background-color: transparent;
+  transition:
+    color 0.18s ease-in-out,
+    outline 0.07s ease-in-out;
+
+  &::before {
+    content: "";
+    position: absolute;
+    border-radius: 100%;
+    background-color: var(--btn-bg-color);
+    opacity: var(--btn-bg-opacity);
+    transition: opacity 0.18s ease-in-out;
+    inset: 0;
+  }
+
+  &__icon {
+    z-index: 5;
+    width: 24px;
+    height: 24px;
+    fill: currentcolor;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    --btn-bg-opacity: 1;
+
+    outline: 2px solid var(--color_grey_900);
+    outline-offset: 1px;
+    color: var(--color-white);
+  }
+
+  &:hover {
+    --btn-bg-opacity: 1;
+
+    color: var(--color-white);
+  }
+}
+
+.sliderControl_light {
+  --btn-bg-opacity: 0.5;
+  --btn-bg-color: var(--color-white);
+
+  &:hover {
+    color: var(--color-grey-800);
+  }
+}

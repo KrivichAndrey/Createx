@@ -1,0 +1,16 @@
+.aboutSection {
+  padding: var(--section-offset) 0 calc(var(--section-offset) / 2);
+
+  &__heading {
+    margin-bottom: 24px;
+    line-height: 1.3;
+  }
+
+  &__textDescr {
+    margin-bottom: 60px;
+  }
+
+  &__videoBlock {
+    height: 500px;
+  }
+}

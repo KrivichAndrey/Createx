@@ -1,78 +1,72 @@
-.check {
+.checkbox {
   position: relative;
   display: flex;
   column-gap: 12px;
-  align-items: flex-start;
-  justify-content: flex-start;
-  transition: all 0.2s linear;
   cursor: pointer;
 
-  &__mark {
+  &__icon {
     display: flex;
     flex: 0 0 auto;
     align-items: center;
     justify-content: center;
     width: 16px;
     height: 16px;
-    border: 1px solid #b3b7bc;
+    border: 1px solid var(--color-grey-500);
     border-radius: 3px;
+    padding: 4px 3px;
     background-color: var(--color-white);
     transform: translate(-1px, 2px);
-    transition: all 0.2s linear;
+    transition: background-color 0.15s ease;
   }
 
-  &__mark-icon {
-    width: 10px;
-    height: 8px;
+  &__mark {
     fill: var(--color-white);
     opacity: 0;
-    transition: all 0.2s linear;
+    transition: opacity 0.15s ease;
   }
+}
 
-  input {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: -1;
-    width: 0;
-    height: 0;
-    opacity: 0;
-  }
+.applicationFormCheckboxBasic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
 
-  input:focus:not(:focus-visible) + .check__mark {
-    outline: none;
-    border: 1px solid #b3b7bc;
-  }
+.applicationFormCheckboxBasic:checked + .checkbox__icon {
+  border: none;
+  background-color: var(--color-primary);
+}
 
-  input:focus + .check__mark {
-    outline: 3px solid rgba($color: #ff5930, $alpha: 70%);
-    border-color: rgba($color: #ff5930, $alpha: 70%);
-  }
+.applicationFormCheckboxBasic:checked + .checkbox__icon .checkbox__mark {
+  z-index: 10;
+  opacity: 1;
+}
 
-  input:checked + .check__mark {
-    outline: none;
-    border: 1px solid var(--color-primary);
-    background-color: var(--color-primary);
+.applicationFormCheckboxBasic:focus + .checkbox__icon {
+  outline: none;
+}
 
-    .check__mark-icon {
-      opacity: 1;
-    }
-  }
+.applicationFormCheckboxBasic:focus-visible + .checkbox__icon {
+  outline: 2px solid rgb(255 90 48 / 80%);
+  box-shadow:
+    0 80px 80px -20px rgb(255 90 48 / 8%),
+    0 30px 24px -10px rgb(255 90 48 / 5%),
+    0 12px 10px -6px rgb(255 90 48 / 4%),
+    0 4px 4px -4px rgb(30 33 44 / 3%);
+  background-color: var(--color-grey-200);
+}
 
-  input:checked:focus:not(:focus-visible) + .check__mark {
-    outline: none;
-  }
-
-  input:checked:focus + .check__mark {
-    outline: 3px solid rgba($color: #ff5930, $alpha: 70%);
-    outline-offset: 2px;
-    border: 1px solid var(--color-primary);
-    background-color: var(--color-primary);
-  }
-
-  &:hover {
-    .check__mark {
-      background-color: var(--color-grey-300);
-    }
-  }
+.applicationFormCheckboxBasic:checked:focus-visible + .checkbox__icon {
+  outline: 2px solid rgb(255 90 48 / 65%);
+  outline-offset: 1px;
+  box-shadow:
+    0 80px 80px -20px rgb(255 90 48 / 8%),
+    0 30px 24px -10px rgb(255 90 48 / 5%),
+    0 12px 10px -6px rgb(255 90 48 / 4%),
+    0 4px 4px -4px rgb(30 33 44 / 3%);
+  background-color: var(--color-primary);
 }

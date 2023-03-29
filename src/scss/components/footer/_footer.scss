@@ -1,0 +1,74 @@
+.footer {
+  padding: 80px 0;
+  background-color: var(--color_grey_900);
+
+  &__container {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 30px;
+    row-gap: 49px;
+    align-items: start;
+  }
+
+  &__about {
+    grid-column: 7 span;
+  }
+
+  &__form {
+    grid-column: 5 span;
+  }
+
+  &__address {
+    display: flex;
+    grid-column: 4 span;
+    flex-direction: column;
+    row-gap: 14px;
+  }
+
+  &__addressTitle {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  &__menuSecondary {
+    grid-column: 5 span;
+  }
+
+  &__copyright {
+    display: flex;
+    grid-column: 10 span;
+    column-gap: 4px;
+    align-items: flex-end;
+    margin-top: 5px;
+
+    &_withIcon {
+      padding-left: 20px;
+      background-image: url("../img/heart.svg");
+      background-position: left center;
+      background-size: 16px 16px;
+      background-repeat: no-repeat;
+      transition: outline 0.05s ease, color 0.18s ease-in-out;
+
+      &:focus {
+        outline: none;
+      }
+
+      &:focus-visible {
+        outline: 2px solid rgb(255 255 255 / 85%);
+        outline-offset: 1px;
+        border-radius: 1px;
+      }
+
+      &:hover {
+        color: var(--color-primary);
+      }
+    }
+  }
+
+  &__upBtn {
+    position: absolute;
+    right: 14px;
+    bottom: -1px;
+  }
+}

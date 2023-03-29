@@ -1,0 +1,61 @@
+.mainDescr {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  color: var(--color-grey-700);
+
+  &_home {
+    color: var(--color-white);
+  }
+}
+
+.textDescr {
+  --size: 16px;
+  --line-height: 150%;
+  --color: var(--color-grey-700);
+
+  font-weight: 400;
+  font-size: var(--size);
+  line-height: var(--line-height);
+  color: var(--color);
+
+  &_fz18 {
+    --size: 18px;
+  }
+
+  &_fz14 {
+    --size: 14px;
+  }
+
+  &_fz12 {
+    --size: 12px;
+  }
+
+  &_tall {
+    --line-height: 160%;
+  }
+
+  &_center {
+    text-align: center;
+  }
+
+  &_light {
+    --color: var(--color-white);
+
+    &_transparent {
+      color: rgb(255 255 255 / 60%);
+    }
+  }
+
+  &_grey_600 {
+    --color: var(--color-grey-600);
+  }
+
+  &_grey_900 {
+    --color: var(--color_grey_900);
+  }
+
+  &_grey_800 {
+    --color: var(--color-grey-800);
+  }
+}

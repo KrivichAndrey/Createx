@@ -1,0 +1,74 @@
+.activityList {
+  --grid-col-gap: 187.5px;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(285px, auto));
+  column-gap: var(--grid-col-gap);
+  row-gap: 50px;
+  justify-content: center;
+  justify-items: center;
+
+  &__item {
+    position: relative;
+
+    &:not(:nth-child(3n)) {
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: calc(var(--grid-col-gap) / 2 * (-1));
+        width: 1px;
+        height: 100%;
+        background-image: url("../img/divider.svg");
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        @media (max-width: 1099px) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &__link {
+    width: 285px;
+    padding-top: 72px;
+    background-position: top center;
+    background-size: 48px 48px;
+    background-repeat: no-repeat;
+    transition: transform 0.2s ease-in-out;
+
+    &_quality {
+      background-image: url("../img/ic-like.svg");
+    }
+
+    &_safety {
+      background-image: url("../img/ic-hand.svg");
+    }
+
+    &_comfort {
+      background-image: url("../img/ic-slippers.svg");
+    }
+
+    &_constract {
+      background-image: url("../img/ic-contract.svg");
+    }
+
+    &_helmet {
+      background-image: url("../img/ic-helmet.svg");
+    }
+
+    &_camera {
+      background-image: url("../img/ic-camera.svg");
+    }
+
+    &:hover {
+      transform: scale(1.15);
+    }
+  }
+
+  &__cardHeading {
+    margin-bottom: 9px;
+  }
+}

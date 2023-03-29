@@ -1,20 +1,10 @@
 .application {
   position: relative;
   padding: 79px 0;
-  background-image: url("@img/bg/application-sec-bg.jpg");
+  background-image: url("../img/applicationBg.jpg");
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: var(--color-white);
-
-  &__heading {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    opacity: 0;
-    visibility: hidden;
-  }
 
   &__container {
     display: flex;
@@ -22,13 +12,14 @@
   }
 }
 
-.application-form {
+.applicationForm {
   display: flex;
+  flex-basis: 495px;
   flex-direction: column;
-  width: 495px;
-  padding: 48px 40px;
-  border: 1px solid var(--color-grey-300);
+  row-gap: 20px;
+  border: 1px solid #e5e8ed;
   border-radius: 4px;
+  padding: 48px 40px;
   box-shadow:
     0 60px 80px -20px rgb(30 33 44 / 16%),
     0 26px 24px -10px rgb(30 33 44 / 10%),
@@ -37,19 +28,11 @@
   background-color: var(--color-white);
 
   &__heading {
-    margin-bottom: 23px;
-  }
-
-  &__form-field {
-    margin-bottom: 19px;
-  }
-
-  &__check {
-    padding-top: 1px;
+    margin-bottom: 4px;
   }
 
   &__btn {
     align-self: center;
-    margin-top: 23px;
+    margin-top: 2px;
   }
 }

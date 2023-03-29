@@ -5,12 +5,14 @@
   column-gap: var(--col-gap);
   align-items: center;
 
-  &__item {
+  &__link {
     position: relative;
     font-weight: 400;
+    font-style: normal;
     font-size: 14px;
     line-height: 150%;
     color: var(--color-grey-800);
+    transition: color 0.2s ease-in-out;
 
     &:not(:first-child) {
       &::before {
@@ -18,24 +20,30 @@
         position: absolute;
         top: 0;
         left: calc((-1) * var(--col-gap) / 2);
-        color: currentolor;
+        color: currentcolor;
       }
     }
 
-    &--active {
+    &_current {
       color: var(--color-grey-600);
     }
-  }
 
-  &__link {
     &:focus {
       outline: none;
     }
 
     &:focus-visible {
-      outline: 3px solid rgba($color: #1e212c, $alpha: 90%);
+      outline: 2px solid var(--color_grey_900);
       outline-offset: 1px;
       border-radius: 1px;
     }
+
+    &:hover {
+      color: var(--color-primary-in-state);
+    }
   }
+}
+
+.hero__breadcrumbs {
+  margin-bottom: 40px;
 }

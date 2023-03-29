@@ -2,4 +2,7 @@
 node_modules
 **/*.js
 src/index.html
-src/page-services.html
+src/services.html
+src/currentService.html
+src/portfolio.html
+src/project.html

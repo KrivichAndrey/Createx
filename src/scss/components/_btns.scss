@@ -1,0 +1,112 @@
+.btn {
+  --btn-outline-active-primary: var(--color-primary);
+  --btn-outline-hover-bg-primary: var(--color-primary);
+  --btn-outline-hover-text-primary: var(--color-white);
+  --btn-solid-primary-bg-hover: var(--color-primary-in-state);
+
+  border-radius: 4px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: var(--color-white);
+  transition: all 0.2s ease-in-out;
+
+  &_large {
+    padding: 0 40px;
+    font-size: 16px;
+    line-height: 3.25;
+  }
+
+  &_regular {
+    padding: 0 32px;
+    font-size: 14px;
+    line-height: 3.1428;
+  }
+
+  &_small {
+    padding: 0 24px;
+    font-size: 12px;
+    line-height: 3;
+  }
+
+  &_outline {
+    border-style: solid;
+    border-width: 1px;
+    background-color: transparent;
+    transition:
+      color 0.2s ease-in-out,
+      outline 0.07s ease-in-out,
+      border 0.07s ease-in-out,
+      background-color 0.2s ease-in-out;
+
+    &_primary {
+      border-color: var(--color-primary);
+      color: var(--color-primary);
+      background-color: var(--color-white);
+
+      &:focus {
+        outline: none;
+      }
+
+      &:focus-visible {
+        outline: 2px solid var(--color_grey_900);
+        outline-offset: -3px;
+        border-color: var(--color-grey-200);
+      }
+
+      &:hover {
+        color: var(--btn-outline-hover-text-primary);
+        background-color: var(--btn-outline-hover-bg-primary);
+      }
+
+      &:active {
+        background-color: var(--btn-outline-active-primary);
+      }
+    }
+
+    &_white {
+      border-color: var(--color-white);
+      color: var(--color-white);
+
+      &:hover {
+        border-color: var(--btn-outline-hover-bg-primary);
+        color: var(--btn-outline-hover-bg-primary);
+      }
+
+      &:active {
+        border-color: var(--btn-outline-active-primary);
+        color: var(--btn-outline-active-primary);
+      }
+    }
+  }
+
+  &_solid {
+    border: none;
+    transition:
+      background-color 0.2s ease-in-out,
+      outline 0.07s ease;
+
+    &_primary {
+      color: var(--color-white);
+      background-color: var(--color-primary);
+
+      &:focus {
+        outline: none;
+      }
+
+      &:focus-visible {
+        outline: 2px solid var(--color_grey_900);
+        outline-offset: -3px;
+        border-color: var(--color-grey-200);
+      }
+
+      &:hover {
+        background-color: var(--btn-solid-primary-bg-hover);
+      }
+
+      &:active {
+        background-color: var(--btn-solid-primary-bg-hover);
+      }
+    }
+  }
+}
