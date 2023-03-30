@@ -1,18 +1,6 @@
 .projectGallerySlider {
   position: relative;
 
-  .sliderControl_prev {
-    position: absolute;
-    top: 36.4%;
-    left: 32px;
-  }
-
-  .sliderControl_next {
-    position: absolute;
-    top: 36.4%;
-    right: 32px;
-  }
-
   &__viewPort {
     overflow: hidden;
     width: 100%;

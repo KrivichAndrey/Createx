@@ -48,6 +48,22 @@
     color: var(--color-white);
   }
 
+  &_prev {
+    &_gallary {
+      position: absolute;
+      top: 36.4%;
+      left: 32px;
+    }
+  }
+
+  &_next {
+    &_gallary {
+      position: absolute;
+      top: 36.4%;
+      right: 32px;
+    }
+  }
+
   &__icon {
     z-index: 5;
     width: 24px;
