@@ -24,10 +24,6 @@
       }
     }
 
-    &_current {
-      color: var(--color-grey-600);
-    }
-
     &:focus {
       outline: none;
     }
@@ -40,6 +36,10 @@
 
     &:hover {
       color: var(--color-primary-in-state);
+    }
+
+    &_current {
+      color: var(--color-grey-600);
     }
   }
 }

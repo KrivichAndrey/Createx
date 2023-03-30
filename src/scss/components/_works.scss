@@ -43,6 +43,20 @@
   transition: background-color 0.18s ease-in-out, outline 0.05s linear;
   cursor: pointer;
 
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    --tab-heading-color: var(--color_grey_900);
+
+    outline: 2px solid var(--color_grey_900);
+  }
+
+  &:hover {
+    --tab-heading-color: var(--color_grey_900);
+  }
+
   &__icon {
     width: 48px;
     height: 48px;
@@ -64,20 +78,6 @@
     --icon-fill-color: var(--color-white);
     --tab-heading-color: var(--color-white);
   }
-
-  &:focus {
-    outline: none;
-  }
-
-  &:focus-visible {
-    --tab-heading-color: var(--color_grey_900);
-
-    outline: 2px solid var(--color_grey_900);
-  }
-
-  &:hover {
-    --tab-heading-color: var(--color_grey_900);
-  }
 }
 
 .btnLoadMore {
@@ -88,20 +88,6 @@
   color: var(--color-grey-800);
   background-color: transparent;
   transition: color 0.18s ease-out;
-
-  &__icon {
-    width: 24px;
-    height: 24px;
-    color: inherit;
-    fill: currentcolor;
-    opacity: 0.9;
-  }
-
-  &__text {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 160%;
-  }
 
   &:focus {
     outline: none;
@@ -115,5 +101,19 @@
 
   &:hover {
     color: var(--color_grey_900);
+  }
+
+  &__icon {
+    width: 24px;
+    height: 24px;
+    color: inherit;
+    fill: currentcolor;
+    opacity: 0.9;
+  }
+
+  &__text {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
   }
 }

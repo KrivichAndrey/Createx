@@ -1,6 +1,18 @@
 .projectGallerySlider {
   position: relative;
 
+  .sliderControl_prev {
+    position: absolute;
+    top: 36.4%;
+    left: 32px;
+  }
+
+  .sliderControl_next {
+    position: absolute;
+    top: 36.4%;
+    right: 32px;
+  }
+
   &__viewPort {
     overflow: hidden;
     width: 100%;
@@ -55,25 +67,13 @@
       object-fit: cover;
     }
 
+    &:not(.projectGallerySlider__thumbnaisControl_active):hover {
+      opacity: 0.85;
+    }
+
     &_active {
       border: 1px solid var(--color-primary);
       opacity: 1;
     }
-
-    &:not(.projectGallerySlider__thumbnaisControl_active):hover {
-      opacity: 0.85;
-    }
-  }
-
-  .sliderControl_prev {
-    position: absolute;
-    top: 36.4%;
-    left: 32px;
-  }
-
-  .sliderControl_next {
-    position: absolute;
-    top: 36.4%;
-    right: 32px;
   }
 }

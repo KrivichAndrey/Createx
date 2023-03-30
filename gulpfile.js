@@ -17,6 +17,8 @@ const del = require("del");
 const webpack = require("webpack");
 const webpackStream = require("webpack-stream");
 const uglify = require("gulp-uglify-es").default;
+const replace = require('gulp-replace');
+var groupCssMediaQueries = require('gulp-group-css-media-queries');
 
 /*const fonts = () => {
   src('./src/fonts/!**.ttf')
@@ -70,9 +72,10 @@ const styles = () => {
   return src("./src/scss/**/*.scss")
     .pipe(sourcemaps.init())
     .pipe(sass({
-        outputStyle: "expanded"
+        outputStyle: "compressed"
       }
     ).on("error", notify.onError()))
+    .pipe(replace(/@img\//g, '../img/'))
     .pipe(rename({
       suffix: ".min"
     }))
@@ -88,12 +91,12 @@ const styles = () => {
 };
 
 const htmlInclude = () => {
-  // return src(["./src/**/*.html"])
   return src(["./src/*.html"])
     .pipe(fileinclude({
       prefix: "@@",
       basepath: "@file"
     }))
+    .pipe(replace(/@img\//g, './img/'))
     .pipe(dest("./app/"))
     .pipe(browserSync.stream());
 };
@@ -134,7 +137,7 @@ const scripts = () => {
     }))
     .on("error", function(err) {
       console.error("WEBPACK ERROR", err);
-      this.emit("end"); // Don't stop the rest of the task
+      this.emit("end");
     })
     .pipe(sourcemaps.init())
     .pipe(uglify().on("error", notify.onError()))

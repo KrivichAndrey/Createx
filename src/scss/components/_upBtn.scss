@@ -8,6 +8,16 @@
   background-color: transparent;
   transition: outline 0.05s ease;
 
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: 2px solid rgb(255 255 255 / 85%);
+    outline-offset: 1px;
+    border-radius: 1px;
+  }
+
   &__text {
     font-weight: 400;
     font-size: 14px;
@@ -30,15 +40,5 @@
     width: 24px;
     height: 24px;
     fill: var(--color-white);
-  }
-
-  &:focus {
-    outline: none;
-  }
-
-  &:focus-visible {
-    outline: 2px solid rgb(255 255 255 / 85%);
-    outline-offset: 1px;
-    border-radius: 1px;
   }
 }

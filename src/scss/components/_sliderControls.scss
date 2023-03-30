@@ -30,13 +30,6 @@
     inset: 0;
   }
 
-  &__icon {
-    z-index: 5;
-    width: 24px;
-    height: 24px;
-    fill: currentcolor;
-  }
-
   &:focus {
     outline: none;
   }
@@ -54,11 +47,22 @@
 
     color: var(--color-white);
   }
+
+  &__icon {
+    z-index: 5;
+    width: 24px;
+    height: 24px;
+    fill: currentcolor;
+  }
 }
 
 .sliderControl_light {
   --btn-bg-opacity: 0.5;
   --btn-bg-color: var(--color-white);
+
+  &:focus-visible {
+    color: var(--color-grey-800);
+  }
 
   &:hover {
     color: var(--color-grey-800);

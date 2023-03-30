@@ -4,5 +4,5 @@ node_modules
 src/index.html
 src/services.html
 src/currentService.html
-src/portfolio.html
+src/works.html
 src/project.html

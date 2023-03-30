@@ -37,7 +37,21 @@
     background-position: top center;
     background-size: 48px 48px;
     background-repeat: no-repeat;
-    transition: transform 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out, outline 0.05s linear;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--color_grey_900);
+      outline-offset: 4px;
+      border-radius: 1px;
+    }
+
+    &:hover {
+      transform: scale(1.15);
+    }
 
     &_quality {
       background-image: url("../img/ic-like.svg");
@@ -61,10 +75,6 @@
 
     &_camera {
       background-image: url("../img/ic-camera.svg");
-    }
-
-    &:hover {
-      transform: scale(1.15);
     }
   }
 

@@ -1,6 +1,6 @@
 .hero {
   padding: 220px 0 353px;
-  background-image: url("../img/hero-home-bg.jpg");
+  background-image: url("@img/hero-home-bg.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -54,9 +54,8 @@
   }
 
   &__decorImg {
-    /* TODO: позиционировать в ПП */
     position: absolute;
     top: 48px;
-    right: -100%;
+    right: -9px;
   }
 }

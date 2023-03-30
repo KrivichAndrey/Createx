@@ -16,4 +16,17 @@
       transform: scale(1.1);
     }
   }
+
+  &__link {
+    transition: outline 0.05s linear;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--color_grey_900);
+      border-radius: 1px;
+    }
+  }
 }

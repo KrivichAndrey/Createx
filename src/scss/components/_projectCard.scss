@@ -12,6 +12,11 @@
   background-color: var(--color-white);
   cursor: pointer;
 
+  &:hover,
+  &:focus-within {
+    --img-height: 277px;
+  }
+
   &__logo {
     width: 100%;
     max-height: var(--img-height);
@@ -40,10 +45,5 @@
 
   &__btn {
     margin-top: 24px;
-  }
-
-  &:hover,
-  &:focus-within {
-    --img-height: 277px;
   }
 }

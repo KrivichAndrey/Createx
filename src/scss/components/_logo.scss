@@ -1,5 +1,6 @@
 .logo {
   --color: var(--color_grey_900);
+  --focus-color: var(--color_grey_900);
 
   width: 132px;
   height: 22px;
@@ -16,19 +17,10 @@
 
   &_light {
     --color: var(--color-white);
+    --focus-color: rgb(255 255 255 / 85%);
 
     width: 142px;
     height: 24px;
-
-    &:focus {
-      outline: none;
-    }
-
-    &:focus-visible {
-      outline: 2px solid rgb(255 255 255 / 85%);
-      outline-offset: 2px;
-      border-radius: 1px;
-    }
   }
 
   &:focus {
@@ -36,7 +28,7 @@
   }
 
   &:focus-visible {
-    outline: 2px solid var(--color_grey_900);
+    outline: 2px solid var(--focus-color);
     outline-offset: 2px;
     border-radius: 1px;
   }

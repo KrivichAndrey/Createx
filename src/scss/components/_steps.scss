@@ -21,6 +21,15 @@
   display: flex;
   flex-direction: column;
 
+  &:hover {
+    .stepsCard__counter {
+      &::before {
+        box-shadow: 0 0 0 16px rgb(255 90 48 / 6%);
+        opacity: 1;
+      }
+    }
+  }
+
   &__counter {
     position: relative;
     width: 84px;
@@ -65,14 +74,5 @@
 
   &__descr {
     line-height: 1.62;
-  }
-
-  &:hover {
-    .stepsCard__counter {
-      &::before {
-        box-shadow: 0 0 0 16px rgb(255 90 48 / 6%);
-        opacity: 1;
-      }
-    }
   }
 }

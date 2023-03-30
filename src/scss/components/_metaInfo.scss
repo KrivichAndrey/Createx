@@ -26,12 +26,6 @@
       transform: translateY(-50%);
     }
 
-    &_withIcon {
-      display: flex;
-      column-gap: 8px;
-      align-items: center;
-    }
-
     &:focus {
       outline: none;
     }
@@ -39,6 +33,12 @@
     &:focus-visible {
       outline: 2px solid var(--color_grey_900);
       border-radius: 1px;
+    }
+
+    &_withIcon {
+      display: flex;
+      column-gap: 8px;
+      align-items: center;
     }
   }
 

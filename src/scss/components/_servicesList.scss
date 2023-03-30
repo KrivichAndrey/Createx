@@ -25,6 +25,20 @@
 .servicesCard {
   overflow: hidden;
 
+  &:hover {
+    .servicesCard__bg {
+      opacity: 1;
+    }
+
+    .servicesCard__icon {
+      fill: var(--color-white);
+    }
+
+    .servicesCard__heading {
+      color: var(--color-white);
+    }
+  }
+
   &__bg {
     position: absolute;
     display: block;
@@ -59,19 +73,5 @@
     position: relative;
     z-index: 10;
     transition: all 0.17s ease-in-out;
-  }
-
-  &:hover {
-    .servicesCard__bg {
-      opacity: 1;
-    }
-
-    .servicesCard__icon {
-      fill: var(--color-white);
-    }
-
-    .servicesCard__heading {
-      color: var(--color-white);
-    }
   }
 }
