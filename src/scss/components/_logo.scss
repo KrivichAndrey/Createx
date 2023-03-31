@@ -4,9 +4,21 @@
 
   width: 132px;
   height: 22px;
-  transition:
-    transform 0.2s ease,
-    outline 0.05s linear;
+  transition: transform 0.2s ease, outline 0.05s linear;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--focus-color);
+    outline-offset: 2px;
+    border-radius: 1px;
+  }
+
+  &:hover {
+    transform: scale(1.1);
+  }
 
   &__icon {
     width: 100%;
@@ -21,19 +33,5 @@
 
     width: 142px;
     height: 24px;
-  }
-
-  &:focus {
-    outline: none;
-  }
-
-  &:focus-visible {
-    outline: 2px solid var(--focus-color);
-    outline-offset: 2px;
-    border-radius: 1px;
-  }
-
-  &:hover {
-    transform: scale(1.1);
   }
 }

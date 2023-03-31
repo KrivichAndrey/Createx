@@ -7,9 +7,7 @@
 
   &__item {
     position: relative;
-    transition:
-      color 0.18s ease,
-      outline 0.05s linear;
+    transition: color 0.18s ease, outline 0.05s linear;
 
     &:not(time):hover {
       color: var(--color-primary);

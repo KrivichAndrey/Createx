@@ -1,0 +1,45 @@
+.aboutStatistic {
+  padding: 120px 0 60px;
+  background-color: var(--color-white);
+
+  &__successList {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 86px;
+  }
+}
+
+.successCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 240px;
+
+  &__value {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 130%;
+    color: var(--color-primary);
+  }
+
+  &__icon {
+    display: block;
+    width: 48px;
+    height: 48px;
+    margin-bottom: 20px;
+    fill: var(--color-grey-600);
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--color_grey_900);
+  }
+
+  &_wide {
+    width: 251px;
+  }
+}

@@ -57,18 +57,12 @@
   }
 
   &__content {
-    padding:
-      var(--content-pt)
-      var(--content-pr)
-      var(--content-pb)
-      var(--content-pl);
+    padding: var(--content-pt) var(--content-pr) var(--content-pb) var(--content-pl);
   }
 
   &__heading {
     margin-bottom: var(--heading-offset-down);
-    transition:
-      color 0.18s ease,
-      outline 0.05s linear;
+    transition: color 0.18s ease, outline 0.05s linear;
     cursor: pointer;
 
     &:focus {

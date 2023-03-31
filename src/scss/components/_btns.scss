@@ -82,9 +82,7 @@
 
   &_solid {
     border: none;
-    transition:
-      background-color 0.2s ease-in-out,
-      outline 0.07s ease;
+    transition: background-color 0.2s ease-in-out, outline 0.07s ease;
 
     &_primary {
       color: var(--color-white);

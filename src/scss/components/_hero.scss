@@ -31,6 +31,12 @@
     margin-top: 61px;
   }
 
+  &__decorImg {
+    position: absolute;
+    top: 48px;
+    right: -9px;
+  }
+
   &_services {
     padding: 153px 0 179px;
     background-image: url("../img/hero_services.jpg");
@@ -53,9 +59,9 @@
     background-color: var(--color-white);
   }
 
-  &__decorImg {
-    position: absolute;
-    top: 48px;
-    right: -9px;
+  &_about {
+    padding-top: 153px;
+    padding-bottom: 179px;
+    background-image: url("@img/hero_about.jpg");
   }
 }

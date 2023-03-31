@@ -20,9 +20,7 @@
     border-radius: 0 4px 4px 0;
     font-size: 14px;
     line-height: 3.1428;
-    transition:
-      outline 0.05s ease,
-      background-color 0.2s ease-in-out;
+    transition: outline 0.05s ease, background-color 0.2s ease-in-out;
 
     &:focus {
       outline: none;

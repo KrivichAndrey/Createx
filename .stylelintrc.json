@@ -75,6 +75,10 @@
           },
           {
             "type": "rule",
+            "selector": "&__.+"
+          },
+          {
+            "type": "rule",
             "selector": "&--.+"
           },
           {

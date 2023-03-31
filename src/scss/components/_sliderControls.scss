@@ -16,9 +16,7 @@
   height: 48px;
   color: var(--color-grey-800);
   background-color: transparent;
-  transition:
-    color 0.18s ease-in-out,
-    outline 0.07s ease-in-out;
+  transition: color 0.18s ease-in-out, outline 0.07s ease-in-out;
 
   &::before {
     content: "";
@@ -48,6 +46,13 @@
     color: var(--color-white);
   }
 
+  &__icon {
+    z-index: 5;
+    width: 24px;
+    height: 24px;
+    fill: currentcolor;
+  }
+
   &_prev {
     &_gallary {
       position: absolute;
@@ -62,13 +67,6 @@
       top: 36.4%;
       right: 32px;
     }
-  }
-
-  &__icon {
-    z-index: 5;
-    width: 24px;
-    height: 24px;
-    fill: currentcolor;
   }
 }
 
