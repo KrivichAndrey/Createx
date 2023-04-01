@@ -1,0 +1,93 @@
+.vacancies {
+  --title-color: var(--title-color);
+
+  position: relative;
+  padding: 121px 0 60px;
+  font-weight: 400;
+  line-height: 150%;
+  background-color: var(--color-white);
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 30px;
+    align-items: start;
+  }
+
+  &__jobList {
+    display: flex;
+    grid-column: 7 span;
+    flex-direction: column;
+    row-gap: 24px;
+  }
+
+  &__callToAction {
+    grid-column: 5 span;
+    justify-self: end;
+    max-width: 390px;
+  }
+}
+
+.vacanyCard {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  column-gap: 40px;
+  row-gap: 7px;
+  align-items: start;
+  border: 1px solid #e5e8ed;
+  border-radius: 4px;
+  padding: 32px 40px;
+  transition: box-shadow 0.2s ease-in-out;
+
+  &:hover {
+    box-shadow: var(--main-shadow);
+  }
+
+  &__headingLink {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: var(--title-color);
+  }
+
+  &__btn {
+    grid-column: 2/3;
+    grid-row: 1/3;
+    transform: translateY(6px);
+  }
+}
+
+.callToAction {
+  &__title {
+    margin-bottom: 24px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 150%;
+    color: var(--title-color);
+  }
+
+  &__text {
+    margin-bottom: 48px;
+    font-size: 18px;
+    line-height: 150%;
+    color: var(--color-grey-800);
+  }
+
+  &__btnGroup {
+    display: flex;
+    column-gap: 30px;
+    align-items: center;
+  }
+
+  &__btn {
+    &_cv {
+      padding: 0 52px;
+    }
+
+    &_subscribe {
+      padding: 0 44px;
+    }
+  }
+}

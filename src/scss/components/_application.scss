@@ -13,13 +13,18 @@
 }
 
 .applicationForm {
+  --size: 495px;
+  --offset-y: 48px;
+  --offset-x: 40px;
+
   display: flex;
-  flex-basis: 495px;
+  flex-shrink: 1;
   flex-direction: column;
   row-gap: 20px;
+  width: var(--size);
   border: 1px solid #e5e8ed;
   border-radius: 4px;
-  padding: 48px 40px;
+  padding: var(--offset-y) var(--offset-x);
   box-shadow:
     0 60px 80px -20px rgb(30 33 44 / 16%),
     0 26px 24px -10px rgb(30 33 44 / 10%),
@@ -34,5 +39,15 @@
   &__btn {
     align-self: center;
     margin-top: 2px;
+
+    &_fullSize {
+      align-self: auto;
+    }
+  }
+
+  &_modal {
+    --size: 486px;
+    --offset-y: 40px;
+    --offset-x: 40px;
   }
 }
