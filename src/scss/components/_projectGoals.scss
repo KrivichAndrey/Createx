@@ -18,11 +18,11 @@
 
   &__detailsList {
     display: flex;
-    grid-column: 6 span;
     flex-direction: column;
     row-gap: 16px;
     align-items: flex-start;
     justify-self: end;
+    grid-column: 6 span;
     width: 495px;
     border-radius: 4px;
     padding: 40px 40px 40px 60px;

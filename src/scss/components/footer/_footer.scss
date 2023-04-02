@@ -21,9 +21,9 @@
 
   &__address {
     display: flex;
-    grid-column: 4 span;
     flex-direction: column;
     row-gap: 14px;
+    grid-column: 4 span;
   }
 
   &__addressTitle {
@@ -37,9 +37,9 @@
 
   &__copyright {
     display: flex;
-    grid-column: 10 span;
     column-gap: 4px;
     align-items: flex-end;
+    grid-column: 10 span;
     margin-top: 5px;
 
     &_withIcon {

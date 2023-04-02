@@ -16,14 +16,14 @@
 
   &__jobList {
     display: flex;
-    grid-column: 7 span;
     flex-direction: column;
     row-gap: 24px;
+    grid-column: 7 span;
   }
 
   &__callToAction {
-    grid-column: 5 span;
     justify-self: end;
+    grid-column: 5 span;
     max-width: 390px;
   }
 }
