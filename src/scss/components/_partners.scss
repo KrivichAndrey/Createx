@@ -6,6 +6,10 @@
     margin-bottom: 60px;
   }
 
+  &__subHeading {
+    margin-bottom: 60px;
+  }
+
   &_currentService {
     padding-bottom: 120px;
   }
@@ -13,12 +17,21 @@
   &_portfolio {
     padding: 120px 0 119px;
   }
+
+  &_page_about {
+    padding: 121px 0 60px;
+
+    .partners__heading {
+      margin-bottom: 23px;
+    }
+  }
 }
 
 .companyList {
   display: flex;
   flex-wrap: wrap;
   column-gap: 102px;
+  row-gap: 40px;
   justify-content: center;
 
   &__item {
