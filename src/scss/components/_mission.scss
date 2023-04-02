@@ -59,4 +59,14 @@
     padding-top: 81px;
     background-color: var(--color_grey_900);
   }
+
+  &_page_about {
+    padding-top: 83px;
+    padding-bottom: 58px;
+    background-color: var(--color-grey-200);
+
+    .mission__activityList {
+      margin-bottom: auto;
+    }
+  }
 }
