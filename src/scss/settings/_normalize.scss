@@ -96,6 +96,7 @@ select {
   text-transform: none;
 }
 
+// noinspection CssInvalidPropertyValue
 button,
 [type="button"],
 [type="reset"],
@@ -164,6 +165,7 @@ textarea {
   appearance: none;
 }
 
+// noinspection CssInvalidPropertyValue
 ::-webkit-file-upload-button {
   appearance: button;
   font: inherit;
