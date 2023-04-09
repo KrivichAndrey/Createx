@@ -102,7 +102,7 @@ const htmlInclude = () => {
 };
 
 const imgToApp = () => {
-  return src(["./src/img/**/*.jpg", "./src/img/**/*.png", "./src/img/**/*.jpeg", "./src/img/**/*.svg", "!src/img/svg/*.svg"])
+  return src(["./src/img/**/*.jpg", "./src/img/**/*.ico", "./src/img/**/*.png", "./src/img/**/*.jpeg", "./src/img/**/*.svg", "!src/img/svg/*.svg"])
     .pipe(dest("./app/img"));
 };
 
@@ -116,33 +116,37 @@ const clean = () => {
 };
 
 const scripts = () => {
-  return src('./src/js/main.js')
-    .pipe(webpackStream({
-      mode: 'development',
-      output: {
-        filename: 'main.js',
-      },
-      module: {
-        rules: [{
-          test: /\.m?js$/,
-          exclude: /(node_modules|bower_components)/,
-          use: {
-            loader: 'babel-loader',
-            options: {
-              presets: ['@babel/preset-env']
-            }
-          }
-        }]
-      },
-    }))
-    .on("error", function(err) {
-      console.error("WEBPACK ERROR", err);
-      this.emit("end");
-    })
-    .pipe(sourcemaps.init())
-    .pipe(uglify().on("error", notify.onError()))
-    .pipe(sourcemaps.write("."))
-    .pipe(dest("./app/js"))
+  // return src('./src/js/main.js')
+  //   .pipe(webpackStream({
+  //     mode: 'development',
+  //     output: {
+  //       filename: 'main.js',
+  //     },
+  //     module: {
+  //       rules: [{
+  //         test: /\.m?js$/,
+  //         exclude: /(node_modules|bower_components)/,
+  //         use: {
+  //           loader: 'babel-loader',
+  //           options: {
+  //             presets: ['@babel/preset-env']
+  //           }
+  //         }
+  //       }]
+  //     },
+  //   }))
+  //   .on("error", function(err) {
+  //     console.error("WEBPACK ERROR", err);
+  //     this.emit("end");
+  //   })
+  //   .pipe(sourcemaps.init())
+  //   .pipe(uglify().on("error", notify.onError()))
+  //   .pipe(sourcemaps.write("."))
+  //   .pipe(dest("./app/js"))
+  //   .pipe(browserSync.stream());
+
+  return src('./src/js/**/*.js')
+    .pipe(dest("./app/js/"))
     .pipe(browserSync.stream());
 };
 
@@ -158,6 +162,7 @@ const watchFiles = () => {
   watch("./src/img/**/*.jpg", imgToApp);
   watch("./src/img/**/*.png", imgToApp);
   watch("./src/img/**/*.jpeg", imgToApp);
+  watch("./src/img/**/*.ico", imgToApp);
   watch("./src/img/**.svg", imgToApp);
   watch("./src/img/**/*.svg", svgSprites);
   watch("./src/resources/**/*", resources);

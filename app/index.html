@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0" />
     <meta content="ie=edge" http-equiv="X-UA-Compatible" />
     <link href="css/main.min.css" rel="stylesheet" />
+    <link href="img/favi.ico" rel="shortcut icon" type="image/ico" />
     <title>Createx Construction</title>
   </head>
 
@@ -237,19 +238,21 @@
             <h2 class="portfolio__heading heading heading_lowHeight">
               Browse our selected projects and learn more about our work
             </h2>
+
             <div class="projectSlider portfolio__projectSlider">
               <nav class="projectSlider__sliderControls sliderControls">
-                <button class="sliderControl">
-                  <svg class="sliderControl__icon">
+                <button class="sliderControl sliderControl_prev">
+                  <svg>
                     <use href="./img/svg/sprite.svg#ic-arrow-left"></use>
                   </svg>
                 </button>
-                <button class="sliderControl">
-                  <svg class="sliderControl__icon">
+                <button class="sliderControl sliderControl_next">
+                  <svg>
                     <use href="./img/svg/sprite.svg#ic-arrow-right"></use>
                   </svg>
                 </button>
               </nav>
+
               <div class="projectSlider__viewpoert">
                 <div class="projectSlider__line">
                   <div class="projectSlider__slide">
@@ -266,6 +269,22 @@
                       </div>
                     </div>
                   </div>
+
+                  <div class="projectSlider__slide">
+                    <div class="projectCard">
+                      <div class="projectCard__logo">
+                        <img class="projectCard__logoImg" src="./img/redFingerBuilding.jpg" alt="red finger buiding" />
+                      </div>
+                      <div class="projectCard__content">
+                        <h3 class="projectCard__heading heading heading_center heading_fz20">Red Finger Building</h3>
+                        <p class="projectCard__subTitle textDescr textDescr_center textDescr_fz14">Business Centers</p>
+                        <a class="projectCard__btn btn btn_regular btn_outline btn_outline_primary" href="project.html">
+                          View project
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
                   <div class="projectSlider__slide">
                     <div class="projectCard">
                       <div class="projectCard__logo">
@@ -280,6 +299,7 @@
                       </div>
                     </div>
                   </div>
+
                   <div class="projectSlider__slide">
                     <div class="projectCard">
                       <div class="projectCard__logo">
@@ -297,6 +317,7 @@
                 </div>
               </div>
             </div>
+
             <div class="moreInfo portfolio__moreInfo">
               <h3 class="heading heading_fz28">Explore all our works</h3>
               <a class="btn btn_large btn_solid btn_solid_primary" href="works.html">View portfolio</a>
@@ -664,7 +685,7 @@
                   >
                 </li>
                 <li class="menuSecondary__listItem">
-                  <a class="menuSecondary__link textDescr textDescr_tall textDescr_light_transparent" href="#">
+                  <a class="menuSecondary__link textDescr textDescr_tall textDescr_light_transparent" href="jobOffer.html">
                     Available Positions
                   </a>
                 </li>

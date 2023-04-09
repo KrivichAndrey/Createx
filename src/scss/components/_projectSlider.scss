@@ -1,9 +1,15 @@
 .projectSlider {
   position: relative;
 
+  &__viewpoert {
+    overflow: hidden;
+  }
+
   &__line {
     display: flex;
+    flex-wrap: nowrap;
     column-gap: 30px;
+    align-items: center;
   }
 
   &__sliderControls {

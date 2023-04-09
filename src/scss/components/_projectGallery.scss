@@ -1,6 +1,18 @@
 .projectGallerySlider {
   position: relative;
 
+  &__sliderControl_prev {
+    position: absolute;
+    top: 36.3%;
+    left: 2.6%;
+  }
+
+  &__sliderControl_next {
+    position: absolute;
+    top: 36.3%;
+    right: 2.6%;
+  }
+
   &__viewPort {
     overflow: hidden;
     width: 100%;
@@ -15,10 +27,14 @@
     column-gap: 0;
     row-gap: 0;
     align-items: center;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
   }
 
   &__slide {
     flex: 0 0 auto;
+    width: 100%;
+    height: 100%;
 
     img {
       width: 100%;
