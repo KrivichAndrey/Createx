@@ -9,6 +9,7 @@
     "no-plusplus": "off",
     "max-len": ["error", 120],
     "no-tabs": "off",
+    "no-trailing-spaces": "off",
     "no-console": "off",
     "no-alert": "off",
     "linebreak-style": "off",

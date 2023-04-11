@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html',{ "title":"News" })
+
+<body class="page">
+  <div class="page__wrapper">
+    @@include('html/headerSecondary.html',{})
+    <main class="main">
+      @@include('html/news/hero.html',{})
+      @@include('html/news/categories.html',{})
+      @@include('html/application.html',{})
+    </main>
+    @@include('html/footer.html',{})
+  </div>
+  <script src="./js/newsTabs.js"></script>
+</body>
+</html>

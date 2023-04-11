@@ -18,6 +18,23 @@
 
   &__item {
     grid-column: 6 span;
+    transition:
+      visibility 0.5s ease-in-out,
+      opacity 0.5s ease-in-out;
+
+    &_hidden {
+      position: absolute;
+      z-index: -1;
+      opacity: 0;
+      visibility: collapse;
+    }
+
+    &_visible {
+      position: static;
+      z-index: auto;
+      opacity: 1;
+      visibility: visible;
+    }
 
     &_large {
       grid-column: 7 span;
@@ -36,7 +53,8 @@
   --content-pb: 21px;
   --content-pl: 24px;
   --heading-offset-down: 13px;
-  --descr-display: block;
+  /* stylelint-disable-next-line value-no-vendor-prefix */
+  --descr-display: -webkit-box;
   --logo-height: 306px;
 
   max-width: 705px;
@@ -45,6 +63,7 @@
   background-color: var(--color-white);
 
   &__logo {
+    overflow: hidden;
     width: 100%;
     height: var(--logo-height);
   }
@@ -81,7 +100,10 @@
 
   &_descr {
     display: var(--descr-display);
+    overflow: hidden;
     margin-top: 16px;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
   }
 
   &_small {
