@@ -45,5 +45,10 @@
     height: 16px;
     fill: currentcolor;
     object-fit: cover;
+
+    &_large {
+      width: 20px;
+      height: 20px;
+    }
   }
 }

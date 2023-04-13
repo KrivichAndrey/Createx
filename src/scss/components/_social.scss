@@ -48,4 +48,16 @@
     --icon-scale: 1;
     --outline-focus-color: var(--color_grey_900);
   }
+
+  &_page_post {
+    --col-gap: 12px;
+    --icon-color: var(--color-grey-700);
+    --icon-hover-color: var(--color-primary);
+    --icon-scale: 1;
+    --outline-focus-color: rgb(30 33 44 / 90%);
+
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+  }
 }

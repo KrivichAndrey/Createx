@@ -26,14 +26,12 @@
       position: absolute;
       z-index: -1;
       opacity: 0;
-      visibility: collapse;
     }
 
     &_visible {
       position: static;
       z-index: auto;
       opacity: 1;
-      visibility: visible;
     }
 
     &_large {
