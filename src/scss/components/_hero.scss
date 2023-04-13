@@ -40,6 +40,12 @@
     right: -9px;
   }
 
+  &__social {
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+  }
+
   &_services {
     padding: 153px 0 179px;
     background-image: url("../img/hero_services.jpg");

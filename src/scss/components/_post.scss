@@ -1,0 +1,103 @@
+.post {
+  padding: 0 0 80px;
+  font-weight: var(--fw);
+  font-size: var(--fz);
+  line-height: var(--lh);
+  color: var(--text-color);
+  background-color: var(--color-white);
+
+  &__logo {
+    position: relative;
+    top: -79px;
+    overflow: hidden;
+    width: 100%;
+    height: 500px;
+    margin-bottom: 1px;
+    border-radius: 4px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top;
+    }
+  }
+
+  &__content {
+    --text-color: var(--color-grey-800);
+    --fz: 16px;
+    --lh: 160%;
+    --fw: 400;
+    --offset: 24px;
+
+    max-width: 65.85%;
+    margin: 0 auto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+
+    .post__checkList {
+      display: flex;
+      flex-direction: column;
+      row-gap: 4px;
+
+      li {
+        padding-left: 32px;
+        background-image: url("@img/decisionsListCheck.svg");
+        background-position: left center;
+        background-size: 16px 16px;
+        background-repeat: no-repeat;
+      }
+    }
+
+    h2 {
+      --text-color: var(--color_grey_900);
+
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 150%;
+    }
+
+    blockquote {
+      --text-color: var(--color_grey_900);
+
+      position: relative;
+      padding-left: 58px;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 150%;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 28px;
+        height: 20px;
+        background-image: url("@img/quotationBraces.svg");
+        background-position: left;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+
+  &__social {
+    position: relative;
+    margin-top: 58px;
+    padding-left: 60px;
+
+    &::before {
+      content: "Share:";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: auto;
+      height: auto;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 160%;
+      color: var(--color_grey_900);
+    }
+  }
+}
