@@ -1,0 +1,42 @@
+.comments {
+  &__form {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 30px;
+    row-gap: 22px;
+    padding-top: 122px;
+  }
+
+  &__formHeading {
+    grid-column: 12 span;
+    margin-bottom: 26px;
+  }
+
+  &__formField {
+    .formField__caption {
+      margin-bottom: 8px;
+    }
+
+    .formField__textarea {
+      flex-basis: 100px;
+    }
+
+    &_name {
+      grid-column: 6 span;
+    }
+
+    &_email {
+      grid-column: 6 span;
+    }
+
+    &_message {
+      grid-column: 12 span;
+    }
+  }
+
+  &__formBtn {
+    justify-self: center;
+    grid-column: 12 span;
+    margin-top: 24px;
+  }
+}

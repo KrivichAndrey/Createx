@@ -264,6 +264,45 @@
                 </div>
               </li>
             </ul>
+            <form class="comments__form" action="#">
+              <h2 class="comments__formHeading heading heading_lowHeight heading_center">Leave your comment</h2>
+              <label
+                class="comments__formField comments__formField_name formField textDescr textDescr_fz16 textDescr_grey_800 textDescr_tall"
+                for="userNameOfPostForm">
+                <span class="formField__caption">Name*</span>
+                <input
+                  class="formField__input input input_large"
+                  id="userNameOfPostForm"
+                  name="userNameOfPostForm"
+                  placeholder="Your name"
+                  type="text"
+                  required />
+              </label>
+              <label
+                class="comments__formField comments__formField_email formField textDescr textDescr_fz16 textDescr_grey_800 textDescr_tall"
+                for="userEmailOfPostForm">
+                <span class="formField__caption">Email*</span>
+                <input
+                  class="formField__input input input_large"
+                  id="userEmailOfPostForm"
+                  name="userEmailOfPostForm"
+                  placeholder="Your working email"
+                  type="email"
+                  required />
+              </label>
+              <label
+                class="comments__formField comments__formField_message formField textDescr textDescr_fz16 textDescr_grey_800 textDescr_tall"
+                for="userCommentOfPostForm">
+                <span class="formField__caption">Your comment*</span>
+                <textarea
+                  class="formField__input formField__textarea input input_large"
+                  id="userCommentOfPostForm"
+                  name="userCommentOfPostForm"
+                  placeholder="Type comment here">
+                </textarea>
+              </label>
+              <input class="comments__formBtn btn btn_large btn_solid btn_solid_primary" type="button" value="Post comment" />
+            </form>
           </div>
         </section>
 
@@ -473,6 +512,5 @@
         </div>
       </footer>
     </div>
-    <script src="./js/newsTabs.js"></script>
   </body>
 </html>
